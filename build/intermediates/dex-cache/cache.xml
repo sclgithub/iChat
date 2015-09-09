@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\iChat\app\libs\umeng-analytics-v5.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\umeng-analytics-v5.2.4-acb74a11131f2b9c615ade6978003c0928661bd8.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\Parse-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="56c22930b5d4f77015b6a40c7f14103d3e101001">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\Parse-1.9.4-912edbc022e91bbbad926e791d296c6e67fa5e60.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\classes-9169520abb3ce79bfa887236cac20131a992236a.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\locSDK_3.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="590d32bdf5bb37ee372a21696b8f7853b224e31f">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\locSDK_3.3-81b7db0bdb06f9894f9efda781cc7f250f494885.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-98e9d3869896f15f23932d8350a861a34ee49bf1.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-09d125123ae41266ca0c64420c3a6f7824b05d0e.jar" />
+    </item>
+    <item
+        jar="D:\Android\android_sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-01aadf2d67fcd610ce7d123f4ff05b07d9eefc03.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\baidumapapi_v3_2_0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_2_0-c6a8d9c84c975b69880a27123e05fdbae39b4004.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\google-play-services.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f0d8e4a84fad131bc291c3c4850afcaa8ba0b299">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\google-play-services-7d2921babff6cc31287eca35b2e0b3f3af607fb7.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\easemobchat_2.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6b9388b9b8895ac9551dcc58c70019a83e03204f">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\easemobchat_2.2.2-dfc2aef3770015aae7e1746db8df91759ac42d81.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\classes-f092324534f0d794bb4547cbe37019fd9f630e60.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\libs\microlog4android-1.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="106efa33f887654341a952b0f337512f7e0a2987">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\microlog4android-1.0.1-05228e90abf699836a3df85c00bc9e7b5e53f8eb.jar" />
+    </item>
+    <item
+        jar="D:\Android\iChat\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="D:\Android\iChat\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-0cd2c35566bcd585bd29bd402dbde62d5c4d9df3.jar" />
+    </item>
+    <item
+        jar="D:\Android\project\iChat\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="D:\Android\project\iChat\app\build\intermediates\pre-dexed\debug\classes-47138278ca1801f3eff2c898eb434e8a5de8c5b5.jar" />
+    </item>
+
+</items>
