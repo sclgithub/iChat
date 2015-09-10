@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.techscl.applib.controller.HXSDKHelper;
 import com.techscl.utils.To;
@@ -20,7 +21,7 @@ public class BaseGestureActivity extends FragmentActivity implements  GestureDet
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);// 设置透明状态栏
         gestureDetector = new GestureDetector(this);
 
     }

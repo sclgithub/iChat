@@ -303,4 +303,11 @@
     <string name="news_rss">news_rss</string>
     <string name="weather">weather</string>
     <string name="scanner_code">scanner_code</string>
+    <string name="news_headlines">news_headlines</string>
+    <string name="news_content">news_content</string>
+    <string name="develop_reading">develop_reading</string>
+    <string name="update_time">update_time</string>
+    <string name="News_sources">News_sources</string>
+    <string name="author">author</string>
+    <string name="hot">hot:</string>
 </resources>

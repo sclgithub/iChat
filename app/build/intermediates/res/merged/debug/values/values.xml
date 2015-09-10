@@ -316,7 +316,7 @@
     <dimen name="field_margin_right">5dp</dimen>
     <dimen name="field_textsize">14sp</dimen>
     <dimen name="height_row_weixin">59dp</dimen>
-    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="height_top_bar">62dp</dimen>
     <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
@@ -326,10 +326,12 @@
     <eat-comment/>
     <dimen name="image_thumbnail_size">100dp</dimen>
     <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
     <dimen name="margin_chat_activity">5dp</dimen>
     <dimen name="max_margin">50dp</dimen>
     <dimen name="mid_margin">20dp</dimen>
     <dimen name="mid_min_margin">10dp</dimen>
+    <dimen name="mid_text_size">14sp</dimen>
     <dimen name="min_margin">5dp</dimen>
     <dimen name="min_max_margin">30dp</dimen>
     <dimen name="msg_text_size">16sp</dimen>
@@ -345,6 +347,8 @@
     <dimen name="page_image_view_height">200dp</dimen>
     <dimen name="sidebar_text_size">10dp</dimen>
     <dimen name="size_avatar">50dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
     <dimen name="title_text_size">26sp</dimen>
     <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -439,6 +443,7 @@
     <string name="Move_into_blacklist_success">Move into blacklist success</string>
     <string name="Move_into_the_blacklist_new">Move into the blacklist</string>
     <string name="Network_error">Network error</string>
+    <string name="News_sources">News_sources</string>
     <string name="Not_Set">Not set</string>
     <string name="Open_group_chat">Public group</string>
     <string name="Open_group_members_invited">Allow members to invite</string>
@@ -519,6 +524,7 @@
     <string name="attach_video">Video</string>
     <string name="attach_video_call">Video call</string>
     <string name="attach_voice_call">Voice call</string>
+    <string name="author">author</string>
     <string name="back">Back</string>
     <string name="be_removing">Be removing</string>
     <string name="being_added">added</string>
@@ -559,6 +565,7 @@
     <string name="delete_video">Delete video</string>
     <string name="delete_voice">Delete voice</string>
     <string name="deleting">Deleting..</string>
+    <string name="develop_reading">develop_reading</string>
     <string name="diagnose">Diagnose</string>
     <string name="did_not_answer">did not answer</string>
     <string name="direct_call">Direct</string>
@@ -598,6 +605,7 @@
     <string name="hanging_up">Hanging up..</string>
     <string name="have_connected_with">Connected to the peer and waiting for the peer to accept</string>
     <string name="have_you_removed">Have you removed from his buddy list</string>
+    <string name="hot">hot:</string>
     <string name="illegal_user_name">Illegal user name</string>
     <string name="input_new_nick_hint">Input a new nick</string>
     <string name="is_down_please_wait">Downloading video, please try again later</string>
@@ -621,6 +629,8 @@
     <string name="network_unavailable">The network connection is not available, please check the network</string>
     <string name="newchat">Create new group</string>
     <string name="newnotify">Receiving a new message</string>
+    <string name="news_content">news_content</string>
+    <string name="news_headlines">news_headlines</string>
     <string name="news_rss">news_rss</string>
     <string name="nickname">NickName</string>
     <string name="nickname_description">Once this nick is set, this nick will be used in push notification (by default this is HuanXin ID ) when the receiver is using the IOS device.</string>
@@ -689,6 +699,7 @@
     <string name="toast_updatephoto_success">update photo success!</string>
     <string name="unable_to_connect">Unable to connect to the server</string>
     <string name="unable_to_get_loaction">Unable to get to your location information!</string>
+    <string name="update_time">update_time</string>
     <string name="user_card">Business card</string>
     <string name="user_name">User name</string>
     <string name="vibrate">ibrate</string>

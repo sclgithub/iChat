@@ -12,6 +12,7 @@
     <string name="Group_of_Lord">Администратор</string>
     <string name="Hands_free">Бесконтактное управление</string>
     <string name="Introduction">Описание</string>
+    <string name="News_sources">新闻来源</string>
     <string name="Not_Set">Настройки не указаны</string>
     <string name="Open_group_chat">Публичный чат</string>
     <string name="Open_group_members_invited">Сделать приглашение в чат свободным</string>
@@ -33,6 +34,7 @@
     <string name="attach_smile">Смайлы</string>
     <string name="attach_take_pic">Сделать фото</string>
     <string name="attach_voice_call">Голосовой вызов</string>
+    <string name="author">作者</string>
     <string name="back">Назад</string>
     <string name="black_item">Черный список</string>
     <string name="blacklist">Черный список</string>
@@ -60,6 +62,7 @@
     <string name="delete_message">Удалить сообщение</string>
     <string name="delete_video">Удалить видео</string>
     <string name="delete_voice">Удалить голосовое сообщение</string>
+    <string name="develop_reading">拓展阅读</string>
     <string name="diagnose">Диагностирование</string>
     <string name="dismiss_group">Распустить чат</string>
     <string name="dissolution_group_hint">Распускать чат при выходе из приложения</string>
@@ -73,6 +76,7 @@
     <string name="group_chat">Чат</string>
     <string name="group_name">Имя чата</string>
     <string name="hang_up">Завершить</string>
+    <string name="hot">热度:</string>
     <string name="is_down_please_wait">Пожалуйста подождите, видео загружается...</string>
     <string name="location_message">Информация о местоположении</string>
     <string name="location_prefix">[Мое местоположение]</string>
@@ -87,6 +91,8 @@
     <string name="network_unavailable">Ошибка соединения, пожалуйста, проверьте Ваше соединение с интернетом.</string>
     <string name="newchat">Создать чат</string>
     <string name="newnotify">Посылать уведомление при получении сообщения</string>
+    <string name="news_content">新闻内容</string>
+    <string name="news_headlines">新闻标题</string>
     <string name="news_rss">新闻订阅</string>
     <string name="not_download">Не скачано:</string>
     <string name="notify">Уведомление о новом сообщении</string>
@@ -112,6 +118,7 @@
     <string name="text_ack_msg">Прочитанные</string>
     <string name="text_delivered_msg">Переданные</string>
     <string name="unable_to_connect">Ошибка соединения с сервером</string>
+    <string name="update_time">更新时间</string>
     <string name="user_card">Визитная карточка</string>
     <string name="user_name">Имя пользователя</string>
     <string name="vibrate">Вибрация</string>

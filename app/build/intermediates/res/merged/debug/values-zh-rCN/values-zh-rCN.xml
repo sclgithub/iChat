@@ -67,6 +67,7 @@
     <string name="Move_into_blacklist_success">移入黑名单成功</string>
     <string name="Move_into_the_blacklist_new">移入到黑名单</string>
     <string name="Network_error">网络出错</string>
+    <string name="News_sources">新闻来源</string>
     <string name="Not_Set">未设置</string>
     <string name="Open_group_chat">公开的群聊</string>
     <string name="Open_group_members_invited">开放群成员邀请</string>
@@ -149,6 +150,7 @@
     <string name="attach_video">视频</string>
     <string name="attach_video_call">视频通话</string>
     <string name="attach_voice_call">语音电话</string>
+    <string name="author">作者</string>
     <string name="back">返回</string>
     <string name="be_removing">正在移出...</string>
     <string name="being_added">正在添加...</string>
@@ -189,6 +191,7 @@
     <string name="delete_video">删除视频</string>
     <string name="delete_voice">删除语音</string>
     <string name="deleting">正在删除...</string>
+    <string name="develop_reading">拓展阅读</string>
     <string name="diagnose">诊断</string>
     <string name="did_not_answer">未接听</string>
     <string name="direct_call">Direct</string>
@@ -228,6 +231,7 @@
     <string name="hanging_up">正在挂断..</string>
     <string name="have_connected_with">已经和对方建立连接，等待对方接受...</string>
     <string name="have_you_removed">已把你从他好友列表里移除</string>
+    <string name="hot">热度:</string>
     <string name="illegal_user_name">用户名不合法</string>
     <string name="input_new_nick_hint">输入新昵称</string>
     <string name="is_down_please_wait">正在下载视频请稍候</string>
@@ -250,6 +254,8 @@
     <string name="network_unavailable">网络连接不可用，请检查网络</string>
     <string name="newchat">新建聊天</string>
     <string name="newnotify">接收新消息通知</string>
+    <string name="news_content">新闻内容</string>
+    <string name="news_headlines">新闻标题</string>
     <string name="news_rss">新闻订阅</string>
     <string name="nickname">昵称</string>
     <string name="nickname_description">设置此昵称以后，在与iOS客户端demo聊天过程中，iOS一侧会显示此昵称而不是iChatID，如果对方使用安卓客户端则此设置不生效</string>
@@ -324,6 +330,7 @@
     <string name="update_contact_list_failed">更新联系人列表失败</string>
     <string name="update_groups">更新群聊</string>
     <string name="update_groups_failed">更新群聊失败</string>
+    <string name="update_time">更新时间</string>
     <string name="user_card">名片</string>
     <string name="user_name">用户名</string>
     <string name="vibrate">震动</string>

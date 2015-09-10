@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -29,23 +30,39 @@ public class AddContactActivity extends BaseGestureActivity {
     private InputMethodManager inputMethodManager;
     private String toAddUsername;
     private ProgressDialog progressDialog;
-
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
-        mTextView = (TextView) findViewById(R.id.add_list_friends);
 
-        editText = (EditText) findViewById(R.id.edit_note);
+        initView();
+
         String strAdd = getResources().getString(R.string.add_friend);
-        mTextView.setText(strAdd);
         String strUserName = getResources().getString(R.string.user_name);
         editText.setHint(strUserName);
+        inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+    }
+
+    /**
+     * 初始化
+     */
+    private void initView() {
+
+        editText = (EditText) findViewById(R.id.edit_note);
         searchedUserLayout = (LinearLayout) findViewById(R.id.ll_user);
         nameText = (TextView) findViewById(R.id.name);
         searchBtn = (Button) findViewById(R.id.search);
         avatar = (ImageView) findViewById(R.id.avatar);
-        inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        toolbar= (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getString(R.string.add_friend));
+        toolbar.setNavigationIcon(R.mipmap.back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                back(v);
+            }
+        });
     }
 
 
@@ -62,7 +79,7 @@ public class AddContactActivity extends BaseGestureActivity {
             toAddUsername = name;
             if (TextUtils.isEmpty(name)) {
                 String st = getResources().getString(R.string.Please_enter_a_username);
-                startActivity(new Intent(this, AlertDialog.class).putExtra("msg", st));
+                To.show(st);
                 return;
             }
 

@@ -16,6 +16,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -275,6 +276,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             return;
         }
         setContentView(R.layout.activity_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);// 设置透明状态栏
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("iChat");
         setSupportActionBar(toolbar);
@@ -339,6 +341,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         switch (item.getItemId()) {
             case R.id.add_friend:
                 startActivity(new Intent(this, AddContactActivity.class));
+                break;
+            case R.id.scanner_code:
+                To.show("scanner_code");
                 break;
         }
         return super.onOptionsItemSelected(item);

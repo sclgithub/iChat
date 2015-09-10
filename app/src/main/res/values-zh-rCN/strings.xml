@@ -312,4 +312,12 @@
     <string name="news_rss">新闻订阅</string>
     <string name="weather">本地天气</string>
     <string name="scanner_code">扫一扫</string>
+
+    <string name="news_headlines">新闻标题</string>
+    <string name="news_content">新闻内容</string>
+    <string name="develop_reading">拓展阅读</string>
+    <string name="update_time">更新时间</string>
+    <string name="News_sources">新闻来源</string>
+    <string name="author">作者</string>
+    <string name="hot">热度:</string>
 </resources>

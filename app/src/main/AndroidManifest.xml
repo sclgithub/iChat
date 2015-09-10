@@ -87,7 +87,7 @@
         <activity
             android:name="com.techscl.lovechat.activity.AddContactActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateVisible"></activity>
         <!-- 群组详情 -->
         <activity
@@ -257,7 +257,13 @@
             android:name="com.techscl.lovechat.activity.UserProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"></activity>
-
+        <!-- 新闻-->
+        <activity
+            android:name="com.techscl.lovechat.activity.NewsDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.techscl.lovechat.activity.NewsListActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <!-- 开机自启动服务 -->
         <receiver android:name="com.easemob.chat.StartServiceReceiver">
             <intent-filter android:priority="1000">

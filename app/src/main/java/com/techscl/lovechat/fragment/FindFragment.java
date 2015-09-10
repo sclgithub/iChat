@@ -18,6 +18,7 @@ import com.easemob.chatuidemo.R;
 import com.google.gson.Gson;
 import com.techscl.lovechat.Weather;
 import com.techscl.lovechat.activity.MainActivity;
+import com.techscl.lovechat.activity.NewsListActivity;
 import com.techscl.utils.FormatCodeUtil;
 import com.techscl.utils.L;
 
@@ -52,7 +53,7 @@ public class FindFragment extends Fragment implements View.OnClickListener {
                 Weather weathers = gson.fromJson(s, Weather.class);
                 L.i("天气:" + s.length());
                 L.i("weather"+s);
-                if (s.length() > 2130) {
+                if (s.length() > 2325) {
                     weather.setText(weathers.getDatanow().getWeather() + "");
                     max_temp.setText(weathers.getDatanow().getTempMax() + "℃");
                     min_temp.setText(weathers.getDatanow().getTempMin() + "℃");
@@ -99,7 +100,7 @@ public class FindFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.news_rss:
-
+                startActivity(new Intent(getActivity(),NewsListActivity.class));
                 break;
         }
     }
