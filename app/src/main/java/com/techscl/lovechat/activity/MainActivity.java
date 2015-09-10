@@ -8,14 +8,19 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.easemob.EMCallBack;
 import com.easemob.EMConnectionListener;
 import com.easemob.EMError;
@@ -46,6 +51,10 @@ import com.techscl.lovechat.db.UserDao;
 import com.techscl.lovechat.domain.InviteMessage;
 import com.techscl.lovechat.domain.InviteMessage.InviteMesageStatus;
 import com.techscl.lovechat.domain.User;
+import com.techscl.lovechat.fragment.ChatAllHistoryFragment;
+import com.techscl.lovechat.fragment.ContactlistFragment;
+import com.techscl.lovechat.fragment.FindFragment;
+import com.techscl.lovechat.fragment.SettingsFragment;
 import com.techscl.lovechat.utils.CommonUtils;
 import com.techscl.utils.L;
 import com.techscl.utils.To;
@@ -58,7 +67,7 @@ import java.util.Map;
 import java.util.UUID;
 
 public class MainActivity extends BaseActivity implements EMEventListener {
-
+    public static RequestQueue requestQueue;
     // 账号在别处登录
     public boolean isConflict = false;
     // 未读消息textview
@@ -70,6 +79,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     // private ChatHistoryFragment chatHistoryFragment;
     private ChatAllHistoryFragment chatHistoryFragment;
     private SettingsFragment settingFragment;
+    private FindFragment findFragment;
     private Fragment[] fragments;
     private int index;
     // 当前fragment的index
@@ -86,6 +96,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private boolean isConflictDialogShow;
     private boolean isAccountRemovedDialogShow;
     private BroadcastReceiver internalDebugReceiver;
+    private Toolbar toolbar;
 
     static void asyncFetchGroupsFromServer() {
         HXSDKHelper.getInstance().asyncFetchGroupsFromServer(new EMCallBack() {
@@ -248,7 +259,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        requestQueue = Volley.newRequestQueue(this);
         if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
             // 防止被移除后，没点确定按钮然后按了home键，长期在后台又进app导致的crash
             // 三个fragment里加的判断同理
@@ -264,6 +275,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             return;
         }
         setContentView(R.layout.activity_main);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("iChat");
+        setSupportActionBar(toolbar);
         initView();
 
         // MobclickAgent.setDebugMode( true );
@@ -284,7 +298,8 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         chatHistoryFragment = new ChatAllHistoryFragment();
         contactListFragment = new ContactlistFragment();
         settingFragment = new SettingsFragment();
-        fragments = new Fragment[]{chatHistoryFragment, contactListFragment, settingFragment};
+        findFragment = new FindFragment();
+        fragments = new Fragment[]{chatHistoryFragment, contactListFragment, findFragment, settingFragment};
         // 添加显示第一个fragment
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, chatHistoryFragment)
                 .add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(chatHistoryFragment)
@@ -312,16 +327,34 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         registerInternalDebugReceiver();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.add_friend:
+                startActivity(new Intent(this, AddContactActivity.class));
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     /**
      * 初始化组件
      */
     private void initView() {
         unreadLabel = (TextView) findViewById(R.id.unread_msg_number);
         unreadAddressLable = (TextView) findViewById(R.id.unread_address_number);
-        mTabs = new Button[3];
+        mTabs = new Button[4];
         mTabs[0] = (Button) findViewById(R.id.btn_conversation);
         mTabs[1] = (Button) findViewById(R.id.btn_address_list);
-        mTabs[2] = (Button) findViewById(R.id.btn_setting);
+        mTabs[2] = (Button) findViewById(R.id.btn_find);
+        mTabs[3] = (Button) findViewById(R.id.btn_setting);
         // 把第一个tab设为选中状态
         mTabs[0].setSelected(true);
 
@@ -341,8 +374,11 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             case R.id.btn_address_list:
                 index = 1;
                 break;
-            case R.id.btn_setting:
+            case R.id.btn_find:
                 index = 2;
+                break;
+            case R.id.btn_setting:
+                index = 3;
                 break;
         }
         if (currentTabIndex != index) {

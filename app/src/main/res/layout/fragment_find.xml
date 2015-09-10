@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/min_margin">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/mid_min_margin"
+                        android:stretchColumns="1">
+
+                        <TableRow android:layout_margin="@dimen/min_margin">
+
+                            <ImageView
+                                android:layout_width="@dimen/min_max_margin"
+                                android:layout_height="@dimen/min_max_margin"
+                                android:src="@mipmap/circle_pressed" />
+
+                            <TextView
+                                android:id="@+id/friend_trends"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/friend_trends"
+                                android:textColor="@color/black_deep"
+                                android:textSize="@dimen/nickname_text_size" />
+                        </TableRow>
+
+                        <TableRow android:layout_margin="@dimen/min_margin">
+
+                            <ImageView
+                                android:layout_width="@dimen/min_max_margin"
+                                android:layout_height="@dimen/min_max_margin"
+                                android:src="@mipmap/nearby_pressed" />
+
+                            <TextView
+                                android:id="@+id/nearby_friends"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/nearby_friends"
+                                android:textColor="@color/black_deep"
+                                android:textSize="@dimen/nickname_text_size" />
+                        </TableRow>
+
+                        <TableRow android:layout_margin="@dimen/min_margin">
+
+                            <ImageView
+                                android:layout_width="@dimen/min_max_margin"
+                                android:layout_height="@dimen/min_max_margin"
+                                android:src="@mipmap/code_pressed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/scanner_code"
+                                android:textColor="@color/black_deep"
+                                android:textSize="@dimen/nickname_text_size" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/setting_table"
+                            android:layout_margin="@dimen/min_margin">
+
+                            <ImageView
+                                android:layout_width="@dimen/min_max_margin"
+                                android:layout_height="@dimen/min_max_margin"
+                                android:src="@mipmap/shake_pressed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/shake_shake"
+                                android:textColor="@color/black_deep"
+                                android:textSize="@dimen/nickname_text_size" />
+                        </TableRow>
+
+                    </TableLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/min_margin">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/mid_min_margin"
+                        android:stretchColumns="1">
+
+                        <TableRow
+                            android:id="@+id/news_rss"
+                            android:layout_margin="@dimen/min_margin">
+
+                            <ImageView
+                                android:layout_width="@dimen/min_max_margin"
+                                android:layout_height="@dimen/min_max_margin"
+                                android:src="@mipmap/rss_pressed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/news_rss"
+                                android:textColor="@color/black_deep"
+                                android:textSize="@dimen/nickname_text_size" />
+                        </TableRow>
+                    </TableLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/min_margin">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/mid_min_margin"
+                        android:stretchColumns="1">
+
+                        <TableRow android:layout_margin="@dimen/min_margin">
+
+                            <ImageView
+                                android:layout_width="@dimen/min_max_margin"
+                                android:layout_height="@dimen/min_max_margin"
+                                android:src="@mipmap/weather_pressed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/weather"
+                                android:textColor="@color/black_deep"
+                                android:textSize="@dimen/nickname_text_size" />
+                        </TableRow>
+
+                        <TextView
+                            android:id="@+id/weather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天气"
+                            android:textColor="@color/black_deep" />
+
+                        <TextView
+                            android:id="@+id/max_temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="高温"
+                            android:textColor="@color/black_deep" />
+
+                        <TextView
+                            android:id="@+id/min_temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="低温"
+                            android:textColor="@color/black_deep" />
+
+                        <TextView
+                            android:id="@+id/wind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风力"
+                            android:textColor="@color/black_deep" />
+
+                        <TextView
+                            android:id="@+id/pm25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="API指数"
+                            android:textColor="@color/black_deep" />
+                    </TableLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</LinearLayout>

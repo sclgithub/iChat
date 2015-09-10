@@ -63,7 +63,7 @@
     <string name="notify">Уведомление о новом сообщении</string>
     <string name="newnotify">Посылать уведомление при получении сообщения</string>
     <string name="voice">Громкость</string>
-    <string name="shake">Вибрация</string>
+    <string name="vibrate">Вибрация</string>
     <string name="chatset">Настройки диалога</string>
     <string name="yangshengqi">Использовать динамик при воспроизведении сообщения</string>
     <string name="book_black">Черный список</string>
@@ -113,6 +113,12 @@
 	<string name="Please_enter_a_username">Пожалуйста, введите имя пользователя</string>
     <string name="is_down_please_wait">Пожалуйста подождите, видео загружается...</string>
     <string name="Exit_the_group_chat">Выйти из чата</string>
-    
+    <!-- 发现界面-->
+    <string name="friend_trends">好友动态</string>
+    <string name="nearby_friends">身边</string>
+    <string name="shake_shake">摇一摇</string>
+    <string name="news_rss">新闻订阅</string>
+    <string name="weather">本地天气</string>
+    <string name="scanner_code">扫一扫</string>
     
 </resources>

@@ -65,20 +65,21 @@
     <string name="connect_conflict">同一帐号已在其他设备登录</string>
     <string name="em_user_remove">此用户已被移除</string>
     <string name="set">设置</string>
+    <string name="find">发现</string>
     <string name="notify">新消息提醒</string>
     <string name="newnotify">接收新消息通知</string>
     <string name="voice">声音</string>
-    <string name="shake">震动</string>
+    <string name="vibrate">震动</string>
     <string name="chatset">聊天设置</string>
     <string name="yangshengqi">使用扬声器播放语音</string>
     <string name="book_black">通讯录黑名单</string>
-    <string name="session">会话</string>
+    <string name="session">消息</string>
     <string name="address_book">通讯录</string>
     <string name="setting">设置</string>
     <string name="now_refresh_list">正在刷新联系人</string>
     <string name="Application_and_notify">申请与通知</string>
     <string name="save_new_nickname">保存</string>
-    <string name="nickname_description">设置此昵称以后，在与iOS客户端demo聊天过程中，iOS一侧会显示此昵称而不是环信ID，如果对方使用安卓客户端则此设置不生效</string>
+    <string name="nickname_description">设置此昵称以后，在与iOS客户端demo聊天过程中，iOS一侧会显示此昵称而不是iChatID，如果对方使用安卓客户端则此设置不生效</string>
     <string name="group_chat">群聊</string>
     <string name="chat_room">聊天室</string>
     <string name="add_friend">添加好友</string>
@@ -286,7 +287,7 @@
     <string name="searching">正在搜索..</string>
     <string name="hanging_up">正在挂断..</string>
     <string name="illegal_user_name">用户名不合法</string>
-    <string name="robot_chat">环信小助手</string>
+    <string name="robot_chat">iChat助手</string>
     <string name="title_user_profile">个人资料</string>
     <string name="nickname">昵称</string>
     <string name="dl_title_upload_photo">上传头像</string>
@@ -304,4 +305,11 @@
     <string name="toast_updatenick_fail">更新昵称失败!</string>
     <string name="toast_updatephoto_success">更新头像成功!</string>
     <string name="toast_updatephoto_fail">更新头像失败!</string>
+    <!-- 发现界面-->
+    <string name="friend_trends">好友动态</string>
+    <string name="nearby_friends">身边</string>
+    <string name="shake_shake">摇一摇</string>
+    <string name="news_rss">新闻订阅</string>
+    <string name="weather">本地天气</string>
+    <string name="scanner_code">扫一扫</string>
 </resources>

@@ -2,12 +2,13 @@ package com.techscl.lovechat.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
 import com.techscl.applib.controller.HXSDKHelper;
 import com.umeng.analytics.MobclickAgent;
 
-public class BaseActivity extends FragmentActivity {
+public class BaseActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle arg0) {
