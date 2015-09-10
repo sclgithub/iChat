@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * 登陆页面
  */
-public class LoginActivity extends BaseActivity {
+public class LoginActivity extends BaseGestureActivity {
     public static final int REQUEST_CODE_SETNICK = 1;
     private EditText usernameEditText;
     private EditText passwordEditText;

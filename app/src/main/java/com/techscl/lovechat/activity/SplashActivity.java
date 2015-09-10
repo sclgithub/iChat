@@ -17,7 +17,7 @@ import com.techscl.lovechat.DemoHXSDKHelper;
 /**
  * 开屏页
  */
-public class SplashActivity extends BaseActivity {
+public class SplashActivity extends BaseGestureActivity {
     private static final int sleepTime = 2000;
     private RelativeLayout rootLayout;
     private TextView versionText;

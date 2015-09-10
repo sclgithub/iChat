@@ -15,7 +15,7 @@ import com.easemob.chatuidemo.R;
 import com.easemob.exceptions.EaseMobException;
 import com.techscl.utils.To;
 
-public class GroupSimpleDetailActivity extends BaseActivity {
+public class GroupSimpleDetailActivity extends BaseGestureActivity {
     private Button btn_add_group;
     private TextView tv_admin;
     private TextView tv_name;

@@ -38,7 +38,7 @@ import com.techscl.utils.To;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GroupDetailsActivity extends BaseActivity implements OnClickListener {
+public class GroupDetailsActivity extends BaseGestureActivity implements OnClickListener {
     private static final int REQUEST_CODE_ADD_USER = 0;
     private static final int REQUEST_CODE_EXIT = 1;
     private static final int REQUEST_CODE_EXIT_DELETE = 2;

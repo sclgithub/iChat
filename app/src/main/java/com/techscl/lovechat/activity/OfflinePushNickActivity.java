@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chatuidemo.R;
 
-public class OfflinePushNickActivity extends BaseActivity {
+public class OfflinePushNickActivity extends BaseGestureActivity {
 
     private EditText inputNickName;
     private Button saveNickName;

@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.easemob.chatuidemo.R;
 
-public class EditActivity extends BaseActivity {
+public class EditActivity extends BaseGestureActivity {
     private EditText editText;
 
 

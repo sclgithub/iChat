@@ -21,7 +21,7 @@ import com.easemob.exceptions.EaseMobException;
 import java.util.Collections;
 import java.util.List;
 
-public class GroupBlacklistActivity extends BaseActivity {
+public class GroupBlacklistActivity extends BaseGestureActivity {
     private ListView listView;
     private ProgressBar progressBar;
     private BlacklistAdapter adapter;

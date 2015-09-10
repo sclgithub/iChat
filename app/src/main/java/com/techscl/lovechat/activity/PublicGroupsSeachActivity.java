@@ -16,7 +16,7 @@ import com.easemob.chatuidemo.R;
 import com.easemob.exceptions.EaseMobException;
 import com.techscl.utils.To;
 
-public class PublicGroupsSeachActivity extends BaseActivity {
+public class PublicGroupsSeachActivity extends BaseGestureActivity {
     public static EMGroup searchedGroup;
     private RelativeLayout containerLayout;
     private EditText idET;

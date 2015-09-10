@@ -98,7 +98,7 @@ import java.util.Map;
 /**
  * 聊天页面
  */
-public class ChatActivity extends BaseActivity implements OnClickListener, EMEventListener {
+public class ChatActivity extends BaseGestureActivity implements OnClickListener, EMEventListener {
     public static final int REQUEST_CODE_CONTEXT_MENU = 3;
     public static final int REQUEST_CODE_TEXT = 5;
     public static final int REQUEST_CODE_VOICE = 6;

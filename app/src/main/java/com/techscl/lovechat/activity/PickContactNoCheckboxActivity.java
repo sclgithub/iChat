@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class PickContactNoCheckboxActivity extends BaseActivity {
+public class PickContactNoCheckboxActivity extends BaseGestureActivity {
 
     protected ContactAdapter contactAdapter;
     private ListView listView;

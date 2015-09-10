@@ -17,7 +17,7 @@ import com.techscl.utils.To;
 /**
  * 注册页
  */
-public class RegisterActivity extends BaseActivity {
+public class RegisterActivity extends BaseGestureActivity {
     private EditText userNameEditText;
     private EditText passwordEditText;
     private EditText confirmPwdEditText;

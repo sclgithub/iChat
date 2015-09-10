@@ -19,7 +19,7 @@ import com.techscl.lovechat.adapter.ChatRoomAdapter;
 
 import java.util.List;
 
-public class ChatRoomActivity extends BaseActivity {
+public class ChatRoomActivity extends BaseGestureActivity {
     public static ChatRoomActivity instance;
     protected List<EMChatRoom> roomList;
     private ListView chatListView;

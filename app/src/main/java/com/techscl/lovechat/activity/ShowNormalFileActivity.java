@@ -15,7 +15,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ShowNormalFileActivity extends BaseActivity {
+public class ShowNormalFileActivity extends BaseGestureActivity {
     private ProgressBar progressBar;
     private File file;
 

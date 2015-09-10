@@ -25,7 +25,7 @@ import com.techscl.utils.L;
 
 import java.util.List;
 
-public class GroupsActivity extends BaseActivity {
+public class GroupsActivity extends BaseGestureActivity {
     public static GroupsActivity instance;
     protected List<EMGroup> grouplist;
     Handler handler = new Handler();

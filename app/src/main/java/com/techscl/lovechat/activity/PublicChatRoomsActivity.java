@@ -27,7 +27,7 @@ import com.techscl.utils.To;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PublicChatRoomsActivity extends BaseActivity {
+public class PublicChatRoomsActivity extends BaseGestureActivity {
     private final int pagesize = 20;
     private ProgressBar pb;
     private TextView title;

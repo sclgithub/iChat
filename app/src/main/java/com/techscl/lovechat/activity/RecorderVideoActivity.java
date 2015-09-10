@@ -47,7 +47,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-public class RecorderVideoActivity extends BaseActivity implements
+public class RecorderVideoActivity extends BaseGestureActivity implements
         OnClickListener, SurfaceHolder.Callback, OnErrorListener,
         OnInfoListener {
     private final static String CLASS_LABEL = "RecordActivity";

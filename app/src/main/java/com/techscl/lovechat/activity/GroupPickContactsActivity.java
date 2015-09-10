@@ -40,7 +40,7 @@ import com.techscl.lovechat.adapter.ContactAdapter;
 import com.techscl.lovechat.domain.User;
 import com.techscl.lovechat.widget.Sidebar;
 
-public class GroupPickContactsActivity extends BaseActivity {
+public class GroupPickContactsActivity extends BaseGestureActivity {
 	private ListView listView;
 	/** 是否为一个新建的群组 */
 	protected boolean isCreatingNewGroup;

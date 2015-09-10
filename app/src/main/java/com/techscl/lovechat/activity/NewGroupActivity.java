@@ -16,7 +16,7 @@ import com.easemob.chat.EMGroupManager;
 import com.easemob.chatuidemo.R;
 import com.easemob.exceptions.EaseMobException;
 
-public class NewGroupActivity extends BaseActivity {
+public class NewGroupActivity extends BaseGestureActivity {
     private EditText groupNameEditText;
     private ProgressDialog progressDialog;
     private EditText introductionEditText;

@@ -33,7 +33,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class RobotsActivity extends BaseActivity {
+public class RobotsActivity extends BaseGestureActivity {
 
     public static final String TAG = RobotsActivity.class.getSimpleName();
 

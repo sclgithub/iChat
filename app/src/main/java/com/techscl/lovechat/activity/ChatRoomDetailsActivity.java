@@ -30,7 +30,7 @@ import com.techscl.utils.To;
 
 import java.util.List;
 
-public class ChatRoomDetailsActivity extends BaseActivity implements OnClickListener {
+public class ChatRoomDetailsActivity extends BaseGestureActivity implements OnClickListener {
     private static final String TAG = "ChatRoomDetailsActivity";
     private static final int REQUEST_CODE_EXIT = 1;
     private static final int REQUEST_CODE_EXIT_DELETE = 2;

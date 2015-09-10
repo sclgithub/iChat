@@ -31,7 +31,7 @@ import com.techscl.lovechat.utils.UserUtils;
 
 import java.io.ByteArrayOutputStream;
 
-public class UserProfileActivity extends BaseActivity implements OnClickListener {
+public class UserProfileActivity extends BaseGestureActivity implements OnClickListener {
 
     private static final int REQUESTCODE_PICK = 1;
     private static final int REQUESTCODE_CUTTING = 2;

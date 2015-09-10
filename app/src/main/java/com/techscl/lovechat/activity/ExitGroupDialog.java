@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.easemob.chatuidemo.R;
 
-public class ExitGroupDialog extends BaseActivity {
+public class ExitGroupDialog extends BaseGestureActivity {
     private TextView text;
     private Button exitBtn;
 

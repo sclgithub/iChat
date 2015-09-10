@@ -43,7 +43,7 @@ import com.easemob.util.PathUtil;
  * 下载显示大图
  * 
  */
-public class ShowBigImage extends BaseActivity {
+public class ShowBigImage extends BaseGestureActivity {
 	private static final String TAG = "ShowBigImage"; 
 	private ProgressDialog pd;
 	private PhotoView image;

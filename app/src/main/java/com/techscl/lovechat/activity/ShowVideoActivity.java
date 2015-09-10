@@ -26,7 +26,7 @@ import java.util.Map;
  *
  * @author Administrator
  */
-public class ShowVideoActivity extends BaseActivity {
+public class ShowVideoActivity extends BaseGestureActivity {
 
     private RelativeLayout loadingLayout;
     private ProgressBar progressBar;

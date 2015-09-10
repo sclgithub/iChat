@@ -16,7 +16,7 @@ import com.easemob.chat.EMChat;
 import com.easemob.chatuidemo.R;
 import com.easemob.util.EMLog;
 
-public class DiagnoseActivity extends BaseActivity implements OnClickListener {
+public class DiagnoseActivity extends BaseGestureActivity implements OnClickListener {
     private TextView currentVersion;
     private Button uploadLog;
     private ProgressDialog progressDialog;

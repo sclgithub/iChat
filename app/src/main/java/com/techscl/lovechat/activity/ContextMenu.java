@@ -8,7 +8,7 @@ import android.view.View;
 import com.easemob.chat.EMMessage;
 import com.easemob.chatuidemo.R;
 
-public class ContextMenu extends BaseActivity {
+public class ContextMenu extends BaseGestureActivity {
 
     private int position;
 

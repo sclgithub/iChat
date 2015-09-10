@@ -13,7 +13,7 @@ import com.easemob.chat.TextMessageBody;
 import com.easemob.chatuidemo.R;
 import com.techscl.lovechat.Constant;
 
-public class CallActivity extends BaseActivity {
+public class CallActivity extends BaseGestureActivity {
 
     protected boolean isInComingCall;
     protected String username;

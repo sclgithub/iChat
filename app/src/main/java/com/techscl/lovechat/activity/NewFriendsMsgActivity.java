@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * 申请与通知
  */
-public class NewFriendsMsgActivity extends BaseActivity {
+public class NewFriendsMsgActivity extends BaseGestureActivity {
     private ListView listView;
 
     @Override

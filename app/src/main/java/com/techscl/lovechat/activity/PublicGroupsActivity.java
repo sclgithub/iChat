@@ -27,7 +27,7 @@ import com.techscl.utils.To;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PublicGroupsActivity extends BaseActivity {
+public class PublicGroupsActivity extends BaseGestureActivity {
     private final int pagesize = 20;
     private ProgressBar pb;
     private ListView listView;

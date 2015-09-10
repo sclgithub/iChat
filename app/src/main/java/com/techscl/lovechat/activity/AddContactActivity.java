@@ -20,7 +20,7 @@ import com.techscl.lovechat.DemoHXSDKHelper;
 import com.techscl.lovechat.LoveChatApp;
 import com.techscl.utils.To;
 
-public class AddContactActivity extends BaseActivity {
+public class AddContactActivity extends BaseGestureActivity {
     private EditText editText;
     private LinearLayout searchedUserLayout;
     private TextView nameText, mTextView;

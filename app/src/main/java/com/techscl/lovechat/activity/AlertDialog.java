@@ -17,7 +17,7 @@ import com.techscl.lovechat.utils.ImageCache;
 
 import java.io.File;
 
-public class AlertDialog extends BaseActivity {
+public class AlertDialog extends BaseGestureActivity {
     private TextView mTextView;
     private Button mButton;
     private int position;

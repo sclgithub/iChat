@@ -37,7 +37,7 @@ import com.easemob.chatuidemo.R;
 import com.techscl.utils.L;
 import com.techscl.utils.To;
 
-public class BaiduMapActivity extends BaseActivity {
+public class BaiduMapActivity extends BaseGestureActivity {
 
     public static BaiduMapActivity instance = null;
     static MapView mMapView = null;
