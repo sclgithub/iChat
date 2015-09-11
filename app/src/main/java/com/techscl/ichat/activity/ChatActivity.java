@@ -84,7 +84,6 @@ import com.techscl.ichat.utils.ImageUtils;
 import com.techscl.ichat.utils.L;
 import com.techscl.ichat.utils.SmileUtils;
 import com.techscl.ichat.utils.To;
-import com.techscl.ichat.utils.UserUtils;
 import com.techscl.ichat.widget.ExpandGridView;
 import com.techscl.ichat.widget.PasteEditText;
 
@@ -210,6 +209,7 @@ public class ChatActivity extends BaseGestureActivity implements OnClickListener
                 finish();
             }
         });
+
         recordingContainer = findViewById(R.id.recording_container);
         micImage = (ImageView) findViewById(R.id.mic_image);
         recordingHint = (TextView) findViewById(R.id.recording_hint);
@@ -378,12 +378,12 @@ public class ChatActivity extends BaseGestureActivity implements OnClickListener
                 isRobot = true;
                 String nick = robotMap.get(toChatUsername).getNick();
                 if (!TextUtils.isEmpty(nick)) {
-                    ((TextView) findViewById(R.id.name)).setText(nick);
+                    toolbar.setTitle(nick);
                 } else {
-                    ((TextView) findViewById(R.id.name)).setText(toChatUsername);
+                    toolbar.setTitle(toChatUsername);
                 }
             } else {
-                UserUtils.setUserNick(toChatUsername, (TextView) findViewById(R.id.name));
+                toolbar.setTitle(toChatUsername);
             }
         } else {
             // 群聊

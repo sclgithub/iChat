@@ -77,7 +77,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private TextView unreadAddressLable;
     private Button[] mTabs;
     private ContactlistFragment contactListFragment;
-    // private ChatHistoryFragment chatHistoryFragment;
     private ChatAllHistoryFragment chatHistoryFragment;
     private SettingsFragment settingFragment;
     private FindFragment findFragment;
@@ -87,7 +86,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private int currentTabIndex;
     // 账号被移除
     private boolean isCurrentAccountRemoved = false;
-
     private MyConnectionListener connectionListener = null;
     private MyGroupChangeListener groupChangeListener = null;
     private InviteMessgeDao inviteMessgeDao;
@@ -99,6 +97,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private BroadcastReceiver internalDebugReceiver;
     private Toolbar toolbar;
 
+    /**
+     * 同步群聊
+     */
     static void asyncFetchGroupsFromServer() {
         HXSDKHelper.getInstance().asyncFetchGroupsFromServer(new EMCallBack() {
 
@@ -124,6 +125,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         });
     }
 
+    /**
+     * 同步会话
+     */
     static void asyncFetchContactsFromServer() {
         HXSDKHelper.getInstance().asyncFetchContactsFromServer(new EMValueCallBack<List<String>>() {
 
@@ -131,7 +135,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             public void onSuccess(List<String> usernames) {
                 Context context = HXSDKHelper.getInstance().getAppContext();
 
-                System.out.println("----------------" + usernames.toString());
                 EMLog.d("roster", "contacts size: " + usernames.size());
                 Map<String, User> userlist = new HashMap<String, User>();
                 for (String username : usernames) {
@@ -206,6 +209,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         });
     }
 
+    /**
+     * 同步黑名单
+     */
     static void asyncFetchBlackListFromServer() {
         HXSDKHelper.getInstance().asyncFetchBlackListFromServer(new EMValueCallBack<List<String>>() {
 
@@ -294,14 +300,13 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 
         inviteMessgeDao = new InviteMessgeDao(this);
         userDao = new UserDao(this);
-        // 这个fragment只显示好友和群组的聊天记录
-        // chatHistoryFragment = new ChatHistoryFragment();
-        // 显示所有人消息记录的fragment
+
         chatHistoryFragment = new ChatAllHistoryFragment();
         contactListFragment = new ContactlistFragment();
         settingFragment = new SettingsFragment();
         findFragment = new FindFragment();
         fragments = new Fragment[]{chatHistoryFragment, contactListFragment, findFragment, settingFragment};
+
         // 添加显示第一个fragment
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, chatHistoryFragment)
                 .add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(chatHistoryFragment)
