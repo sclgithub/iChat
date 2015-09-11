@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__attrs.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__attrs.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__attrs.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__attrs.xml -->
     <eat-comment/>
     <attr format="color" name="selectedColor"/>
     <attr format="dimension" name="strokeWidth"/>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__attrs.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__attrs.xml -->
     <eat-comment/>
     <attr format="color" name="unselectedColor"/>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -27,14 +27,14 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__defaults.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
     <bool name="default_line_indicator_centered">true</bool>
     <bool name="default_title_indicator_selected_bold">true</bool>
     <bool name="default_underline_indicator_fades">true</bool>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -46,13 +46,13 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black_deep">#FF000000</color>
     <color name="blue">#4876FF</color>
     <color name="bottom_bar_normal_bg">#2D2F31</color>
     <color name="bottom_text_color_normal">#ffffff</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -60,7 +60,7 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="btn_answer_normal">#2dafa3</color>
     <color name="btn_answer_pressed">#4ebcd3</color>
@@ -80,24 +80,24 @@
     <color name="btn_register_pressed">#00acff</color>
     <color name="btn_white_normal">#f7f8f8</color>
     <color name="btn_white_pressed">#b5b5b6</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="common_bg">#fcfcfc</color>
     <color name="common_bottom_bar_normal_bg">#2d2f31</color>
     <color name="common_bottom_bar_selected_bg">#161718</color>
     <color name="common_botton_bar_blue">#2ea7e0</color>
     <color name="common_top_bar_blue">#4ebcd3</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__defaults.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <color name="default_circle_indicator_fill_color">#999999</color>
     <color name="default_circle_indicator_page_color">#00000000</color>
@@ -108,28 +108,28 @@
     <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="divider_list">#d4d4d4</color>
     <color name="error_item_color">#F6EBE6</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="gray">#979797</color>
     <color name="gray_normal">#666667</color>
     <color name="gray_pressed">#b5b5b6</color>
     <color name="grid_state_focused">#80000000</color>
     <color name="grid_state_pressed">#1Affffff</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -147,10 +147,10 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="orange">#FFA500</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
@@ -160,10 +160,10 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="red">#D33F3F</color>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#42ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
@@ -175,7 +175,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="top_bar_normal_bg">#00acff</color>
     <color name="voip_interface_text_color">#bababa</color>
@@ -214,7 +214,7 @@
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -276,19 +276,19 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="call_button_padding_left">25dp</dimen>
     <dimen name="call_button_padding_right">25dp</dimen>
     <dimen name="call_button_padding_vertical">10dp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__defaults.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">2.5dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
@@ -303,7 +303,7 @@
     <dimen name="default_title_indicator_text_size">15dp</dimen>
     <dimen name="default_title_indicator_title_padding">5dp</dimen>
     <dimen name="default_title_indicator_top_padding">7dp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -311,18 +311,18 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="field_margin_right">5dp</dimen>
     <dimen name="field_textsize">14sp</dimen>
     <dimen name="height_row_weixin">59dp</dimen>
     <dimen name="height_top_bar">62dp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="image_thumbnail_size">100dp</dimen>
     <dimen name="image_thumbnail_spacing">1dp</dimen>
@@ -336,12 +336,12 @@
     <dimen name="min_max_margin">30dp</dimen>
     <dimen name="msg_text_size">16sp</dimen>
     <dimen name="nickname_text_size">18sp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="padding_search_bar">5dp</dimen>
     <dimen name="page_image_view_height">200dp</dimen>
@@ -350,7 +350,7 @@
     <dimen name="small_padding">8dp</dimen>
     <dimen name="small_text_size">12sp</dimen>
     <dimen name="title_text_size">26sp</dimen>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
@@ -366,17 +366,17 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/vpi__defaults.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Add_a_button_was_clicked">Add a button was clicked</string>
     <string name="Add_a_friend">Let me to be your friend!</string>
@@ -488,7 +488,7 @@
     <string name="Whether_the_public">Is public</string>
     <string name="Whether_to_empty_all_chats">Clear all messages?</string>
     <string name="Whether_to_send">Are you sure to send?</string>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -507,7 +507,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="add_friend">Add friends</string>
     <string name="add_public_group_chat">Add public group</string>
@@ -679,10 +679,10 @@
     <string name="setting">Settings</string>
     <string name="setting_nickname">Setting nickname</string>
     <string name="shake_shake">shake_shake</string>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="sure_to_empty_this">Clear all messages?</string>
     <string name="temporary_does_not">Currently the video size greater than 10M is not supported!</string>
@@ -709,11 +709,11 @@
     <string name="weather">weather</string>
     <string name="yangshengqi">Use speaker</string>
     <string name="you_are_group">You have been kicked off from the group</string>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AnimBottom" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
@@ -748,11 +748,11 @@
     <style name="Anim_style2" parent="android:Theme.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/AnimFade</item>
     </style>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
@@ -766,7 +766,7 @@
         <item name="searchViewStyle">@style/MySearchViewStyle</item>
     </style>
     <style name="AppTheme" parent="android:Theme.Light"/>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1681,7 +1681,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1697,7 +1697,7 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="HeadScale" parent="android:Theme.Dialog">
         <item name="android:windowAnimationStyle">@style/AnimHead</item>
@@ -1780,7 +1780,7 @@
         -->
 
     </style>
-    <!-- From: file:/D:/Android/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -2107,7 +2107,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/D:/Android/iChat/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="bottom_line_edit_text_style" parent="@android:style/Widget.EditText">
         <item name="android:gravity">center_vertical</item>

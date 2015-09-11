@@ -37,7 +37,7 @@
                 android:textSize="22sp"
                 android:visibility="visible" />
 
-            <com.techscl.lovechat.widget.MyChronometer
+            <com.techscl.ichat.widget.MyChronometer
                 android:id="@+id/chronometer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -198,4 +198,4 @@
         </LinearLayout>
     </RelativeLayout>
 
-</RelativeLayout><!-- From: file:/D:/Android/iChat/app/src/main/res/layout/activity_video_call.xml -->
+</RelativeLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/activity_video_call.xml -->

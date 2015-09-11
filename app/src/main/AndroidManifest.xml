@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.easemob.chatuidemo"
+    package="com.techscl.ichat"
     android:versionCode="22"
     android:versionName="2.2.2">
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -34,26 +35,26 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE"
+        android:name="com.techscl.ichat.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
-    <uses-permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.techscl.ichat.permission.C2D_MESSAGE" />
 
 
     <application
-        android:name="com.techscl.lovechat.LoveChatApp"
+        android:name="com.techscl.ichat.LoveChatApp"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
         <activity
-            android:name="com.techscl.lovechat.activity.MainActivity"
+            android:name="com.techscl.ichat.activity.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:windowSoftInputMode="adjustPan"/>
 
         <!-- 开屏页 -->
         <activity
-            android:name="com.techscl.lovechat.activity.SplashActivity"
+            android:name="com.techscl.ichat.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide">
             <intent-filter>
@@ -65,205 +66,205 @@
 
         <!-- 登陆 -->
         <activity
-            android:name="com.techscl.lovechat.activity.LoginActivity"
+            android:name="com.techscl.ichat.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustResize|stateVisible"></activity>
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
 
         <!-- 注册 -->
         <activity
-            android:name="com.techscl.lovechat.activity.RegisterActivity"
+            android:name="com.techscl.ichat.activity.RegisterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustResize|stateVisible"></activity>
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
         <!-- 聊天页面 -->
         <activity
-            android:name="com.techscl.lovechat.activity.ChatActivity"
+            android:name="com.techscl.ichat.activity.ChatActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
         <!-- 添加好友 -->
         <activity
-            android:name="com.techscl.lovechat.activity.AddContactActivity"
+            android:name="com.techscl.ichat.activity.AddContactActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:windowSoftInputMode="stateVisible"></activity>
+            android:windowSoftInputMode="stateVisible"/>
         <!-- 群组详情 -->
         <activity
-            android:name="com.techscl.lovechat.activity.GroupDetailsActivity"
+            android:name="com.techscl.ichat.activity.GroupDetailsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <!-- 群组列表 -->
         <activity
-            android:name="com.techscl.lovechat.activity.GroupsActivity"
+            android:name="com.techscl.ichat.activity.GroupsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
 
         <activity
-            android:name="com.techscl.lovechat.activity.ChatRoomActivity"
+            android:name="com.techscl.ichat.activity.ChatRoomActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <!-- 聊天室详情 -->
         <activity
-            android:name="com.techscl.lovechat.activity.ChatRoomDetailsActivity"
+            android:name="com.techscl.ichat.activity.ChatRoomDetailsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
         <!-- 新建群组 -->
         <activity
-            android:name="com.techscl.lovechat.activity.NewGroupActivity"
+            android:name="com.techscl.ichat.activity.NewGroupActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <!-- 退出群组提示框 -->
         <activity
-            android:name="com.techscl.lovechat.activity.ExitGroupDialog"
+            android:name="com.techscl.ichat.activity.ExitGroupDialog"
             android:screenOrientation="portrait"
-            android:theme="@style/MyDialogStyleBottom"></activity>
+            android:theme="@style/MyDialogStyleBottom"/>
         <!-- 群组选人 -->
         <activity
-            android:name="com.techscl.lovechat.activity.GroupPickContactsActivity"
+            android:name="com.techscl.ichat.activity.GroupPickContactsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
         <!-- 地图 -->
         <activity
-            android:name="com.techscl.lovechat.activity.BaiduMapActivity"
+            android:name="com.techscl.ichat.activity.BaiduMapActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
         <!-- 新的朋友邀请消息页面 -->
         <activity
-            android:name="com.techscl.lovechat.activity.NewFriendsMsgActivity"
+            android:name="com.techscl.ichat.activity.NewFriendsMsgActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <!-- 转发消息用户列表页面 -->
         <activity
-            android:name="com.techscl.lovechat.activity.ForwardMessageActivity"
+            android:name="com.techscl.ichat.activity.ForwardMessageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:windowSoftInputMode="adjustPan"/>
         <!-- 自定义的contextmenu -->
         <activity
-            android:name="com.techscl.lovechat.activity.ContextMenu"
+            android:name="com.techscl.ichat.activity.ContextMenu"
             android:screenOrientation="portrait"
-            android:theme="@style/MyDialogStyle"></activity>
+            android:theme="@style/MyDialogStyle"/>
         <!-- 自定义的alertdialog -->
         <activity
-            android:name="com.techscl.lovechat.activity.AlertDialog"
+            android:name="com.techscl.ichat.activity.AlertDialog"
             android:screenOrientation="portrait"
-            android:theme="@style/MyDialogStyle"></activity>
+            android:theme="@style/MyDialogStyle"/>
         <!-- 显示下载大图页面 -->
         <activity
-            android:name="com.techscl.lovechat.activity.ShowBigImage"
+            android:name="com.techscl.ichat.activity.ShowBigImage"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/horizontal_slide"/>
         <!-- 下载文件 -->
         <activity
-            android:name="com.techscl.lovechat.activity.ShowNormalFileActivity"
+            android:name="com.techscl.ichat.activity.ShowNormalFileActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/horizontal_slide"/>
         <!-- 黑名单 -->
         <activity
-            android:name="com.techscl.lovechat.activity.BlacklistActivity"
+            android:name="com.techscl.ichat.activity.BlacklistActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
         <!-- 公开的群聊列表 -->
         <activity
-            android:name="com.techscl.lovechat.activity.PublicGroupsActivity"
+            android:name="com.techscl.ichat.activity.PublicGroupsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
 
         <activity
-            android:name="com.techscl.lovechat.activity.PublicChatRoomsActivity"
+            android:name="com.techscl.ichat.activity.PublicChatRoomsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
 
         <!-- 语音通话 -->
         <activity
-            android:name="com.techscl.lovechat.activity.VoiceCallActivity"
+            android:name="com.techscl.ichat.activity.VoiceCallActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/nornal_style"></activity>
+            android:theme="@style/nornal_style"/>
         <!-- 视频通话 -->
         <activity
-            android:name="com.techscl.lovechat.activity.VideoCallActivity"
+            android:name="com.techscl.ichat.activity.VideoCallActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/horizontal_slide"/>
         <!-- 群聊简单信息 -->
         <activity
-            android:name="com.techscl.lovechat.activity.GroupSimpleDetailActivity"
+            android:name="com.techscl.ichat.activity.GroupSimpleDetailActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <!-- 群组黑名单用户列表 -->
         <activity
-            android:name="com.techscl.lovechat.activity.GroupBlacklistActivity"
+            android:name="com.techscl.ichat.activity.GroupBlacklistActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
-            android:name="com.techscl.lovechat.activity.PublicGroupsSeachActivity"
+            android:name="com.techscl.ichat.activity.PublicGroupsSeachActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
-            android:name="com.techscl.lovechat.activity.EditActivity"
+            android:name="com.techscl.ichat.activity.EditActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateVisible"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateVisible"/>
         <activity
-            android:name="com.techscl.lovechat.activity.ShowVideoActivity"
+            android:name="com.techscl.ichat.activity.ShowVideoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <!-- choose video -->
         <activity
-            android:name="com.techscl.lovechat.activity.ImageGridActivity"
+            android:name="com.techscl.ichat.activity.ImageGridActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
-            android:name="com.techscl.lovechat.activity.RecorderVideoActivity"
+            android:name="com.techscl.ichat.activity.RecorderVideoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <!-- upload error log -->
         <activity
-            android:name="com.techscl.lovechat.activity.DiagnoseActivity"
+            android:name="com.techscl.ichat.activity.DiagnoseActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
 
         <!-- iOS offline push nick -->
         <activity
-            android:name="com.techscl.lovechat.activity.OfflinePushNickActivity"
+            android:name="com.techscl.ichat.activity.OfflinePushNickActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <!-- robots list -->
         <activity
-            android:name="com.techscl.lovechat.activity.RobotsActivity"
+            android:name="com.techscl.ichat.activity.RobotsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <!-- user profile -->
         <activity
-            android:name="com.techscl.lovechat.activity.UserProfileActivity"
+            android:name="com.techscl.ichat.activity.UserProfileActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <!-- 新闻-->
         <activity
-            android:name="com.techscl.lovechat.activity.NewsDetailActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:name="com.techscl.ichat.activity.NewsDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
-            android:name="com.techscl.lovechat.activity.NewsListActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:name="com.techscl.ichat.activity.NewsListActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <!-- 开机自启动服务 -->
         <receiver android:name="com.easemob.chat.StartServiceReceiver">
             <intent-filter android:priority="1000">
@@ -287,10 +288,10 @@
 
         <service
             android:name="com.easemob.chat.EMGCMListenerService"
-            android:exported="false"></service>
+            android:exported="false"/>
 
         <receiver
-            android:name="com.techscl.lovechat.receiver.GCMPushBroadCast"
+            android:name="com.techscl.ichat.receiver.GCMPushBroadCast"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.easemob.sdk.push" />
@@ -325,7 +326,7 @@
         <!-- umeng appkey，可忽略 -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="53912a3156240b01a7075ed1"></meta-data>
+            android:value="53912a3156240b01a7075ed1"/>
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="3ecea51f560650b1ed8a4b99808f52e8" />

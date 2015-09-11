@@ -74,4 +74,4 @@
             android:layout_toLeftOf="@id/iv_voice" />
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/D:/Android/iChat/app/src/main/res/layout/row_received_voice.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/row_received_voice.xml -->

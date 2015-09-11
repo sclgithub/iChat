@@ -11,16 +11,7 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical" >
 
-        <include layout="@layout/commom_back_btn" />
-
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/Open_group_chat"
-            android:textColor="@color/bottom_text_color_normal"
-            android:textSize="18sp" />
+        <include layout="@layout/toolbar" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -57,4 +48,4 @@
         android:fastScrollAlwaysVisible="false"
         android:fastScrollEnabled="false" />
 
-</LinearLayout><!-- From: file:/D:/Android/iChat/app/src/main/res/layout/activity_public_groups.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/activity_public_groups.xml -->

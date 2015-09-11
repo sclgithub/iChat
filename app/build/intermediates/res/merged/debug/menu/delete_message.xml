@@ -7,4 +7,4 @@
         android:id="@+id/delete_message"
         android:title="@string/delete_conversation_messages"/>
     
-</menu><!-- From: file:/D:/Android/iChat/app/src/main/res/menu/delete_message.xml -->
+</menu><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/menu/delete_message.xml -->

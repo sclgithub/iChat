@@ -4,4 +4,4 @@
     <item android:drawable="@mipmap/friends_pressed" android:state_selected="true"/>
     <item android:drawable="@mipmap/friends"/>
 
-</selector><!-- From: file:/D:/Android/iChat/app/src/main/res/drawable/tab_contact_list_bg.xml -->
+</selector><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/tab_contact_list_bg.xml -->

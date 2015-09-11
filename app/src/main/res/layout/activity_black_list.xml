@@ -12,16 +12,7 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical" >
 
-        <include layout="@layout/commom_back_btn" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/black_item"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+        <include layout="@layout/toolbar" />
 
         <!-- <RelativeLayout
             android:id="@+id/container_remove"

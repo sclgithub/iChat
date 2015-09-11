@@ -12,16 +12,7 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical" >
 
-        <include layout="@layout/commom_back_btn" />
-
-        <TextView
-            android:id="@+id/tv_contact_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/select_contacts"
-            android:textColor="@color/bottom_text_color_normal"
-            android:textSize="18sp" />
+        <include layout="@layout/toolbar" />
 
     </RelativeLayout>
 
@@ -39,7 +30,7 @@
             android:divider="#E2E2E2"
             android:dividerHeight="1dp" />
 
-        <com.techscl.lovechat.widget.Sidebar
+        <com.techscl.ichat.widget.Sidebar
             android:id="@+id/sidebar"
             android:layout_width="25dp"
             android:layout_height="match_parent"

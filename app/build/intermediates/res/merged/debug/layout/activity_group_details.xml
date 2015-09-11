@@ -10,28 +10,7 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical" >
 
-        <LinearLayout
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/common_tab_bg"
-            android:onClick="back" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="9dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/mm_title_back" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/group_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+        <include layout="@layout/toolbar"></include>
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -54,7 +33,7 @@
             android:orientation="vertical" >
 
 
-            <com.techscl.lovechat.widget.ExpandGridView
+            <com.techscl.ichat.widget.ExpandGridView
                 android:id="@+id/gridview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -269,4 +248,4 @@
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout><!-- From: file:/D:/Android/iChat/app/src/main/res/layout/activity_group_details.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/activity_group_details.xml -->

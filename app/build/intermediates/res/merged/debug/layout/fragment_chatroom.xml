@@ -11,15 +11,8 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical">
 
-        <include layout="@layout/commom_back_btn" />
+        <include layout="@layout/toolbar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/chat_room"
-            android:textColor="@color/bottom_text_color_normal"
-            android:textSize="18sp" />
 
     </RelativeLayout>
 
@@ -35,4 +28,4 @@
         android:fastScrollAlwaysVisible="false"
         android:fastScrollEnabled="false" />
 
-</LinearLayout><!-- From: file:/D:/Android/iChat/app/src/main/res/layout/fragment_chatroom.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/fragment_chatroom.xml -->

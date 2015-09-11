@@ -3,4 +3,4 @@
     android:duration="300"
     android:fromAlpha="1.0"
     android:interpolator="@android:anim/accelerate_interpolator"
-    android:toAlpha="0.0" /><!-- From: file:/D:/Android/iChat/app/src/main/res/anim/fade_out.xml -->
+    android:toAlpha="0.0" /><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/anim/fade_out.xml -->

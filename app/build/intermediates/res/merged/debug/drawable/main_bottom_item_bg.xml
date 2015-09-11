@@ -3,4 +3,4 @@
      <item android:state_selected="true"  android:drawable="@color/white"/>
     <item  android:drawable="@color/white"/>
 </selector>
-<!-- From: file:/D:/Android/iChat/app/src/main/res/drawable/main_bottom_item_bg.xml -->
+<!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/main_bottom_item_bg.xml -->

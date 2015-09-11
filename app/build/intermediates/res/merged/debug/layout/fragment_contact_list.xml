@@ -52,7 +52,7 @@
                 android:dividerHeight="1px"
                 android:fastScrollEnabled="false" />
 
-            <com.techscl.lovechat.widget.Sidebar
+            <com.techscl.ichat.widget.Sidebar
                 android:id="@+id/sidebar"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
@@ -97,4 +97,4 @@
 
     </FrameLayout>
 
-</LinearLayout><!-- From: file:/D:/Android/iChat/app/src/main/res/layout/fragment_contact_list.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/fragment_contact_list.xml -->

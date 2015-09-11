@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/chatfrom_bg_focused" />
     <item android:state_selected="true" android:drawable="@drawable/chatfrom_bg_focused" />
     <item android:drawable="@drawable/chatfrom_bg_normal" />
-</selector><!-- From: file:/D:/Android/iChat/app/src/main/res/drawable/chatfrom_bg.xml -->
+</selector><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/chatfrom_bg.xml -->

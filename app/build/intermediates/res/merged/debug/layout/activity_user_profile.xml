@@ -12,15 +12,8 @@
         android:background="@color/top_bar_normal_bg"
         android:gravity="center_vertical" >
 
-        <include layout="@layout/commom_back_btn" />
+        <include layout="@layout/toolbar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/title_user_profile"
-            android:textColor="#fff"
-            android:textSize="18sp" />
     </RelativeLayout>
     <LinearLayout 
         android:layout_width="fill_parent"
@@ -127,4 +120,4 @@
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
-<!-- From: file:/D:/Android/iChat/app/src/main/res/layout/activity_user_profile.xml -->
+<!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/activity_user_profile.xml -->
