@@ -348,7 +348,10 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                 startActivity(new Intent(this, AddContactActivity.class));
                 break;
             case R.id.scanner_code:
-                To.show("scanner_code");
+                startActivity(new Intent(this, CodeScanActivity.class));
+                break;
+            case R.id.feedback:
+                startActivity(new Intent(this, DiagnoseActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

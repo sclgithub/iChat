@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:2:1-336:12
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:2:1-344:12
 	package
 		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml
@@ -134,7 +134,7 @@ ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest
 	android:name
 		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:40:22-77
 application
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:43:5-334:19
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:43:5-342:19
 MERGED from [com.android.support:support-v4:23.0.1] /Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.1] /Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
@@ -505,105 +505,123 @@ ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest
 		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:267:13-63
 	android:name
 		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:266:13-71
+activity#com.techscl.ichat.activity.CodeScanActivity
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:268:9-269:65
+	android:theme
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:269:13-63
+	android:name
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:268:19-60
+activity#com.techscl.ichat.zxing.activity.CaptureActivity
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:270:9-275:62
+	android:screenOrientation
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:273:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:275:13-60
+	android:configChanges
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:272:13-63
+	android:theme
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:274:13-56
+	android:name
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:271:13-59
 receiver#com.easemob.chat.StartServiceReceiver
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:269:9-276:20
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:277:9-284:20
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:269:19-71
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:277:19-71
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.QUICKBOOT_POWERON+android.intent.category.LAUNCHER
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:270:13-275:29
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:278:13-283:29
 	android:priority
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:270:28-51
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:278:28-51
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:271:17-79
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:279:17-79
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:271:25-76
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:279:25-76
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:272:17-82
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:280:17-82
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:272:25-79
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:280:25-79
 receiver#com.easemob.chat.EMGCMBroadcastReceiver
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:279:9-287:20
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:287:9-295:20
 	android:exported
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:281:13-36
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:289:13-36
 	android:permission
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:282:13-73
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:290:13-73
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:280:13-67
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:288:13-67
 intent-filter#com.easemob.chatuidemo+com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:283:13-286:29
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:291:13-294:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:284:17-81
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:292:17-81
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:284:25-78
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:292:25-78
 category#com.easemob.chatuidemo
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:285:17-67
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:293:17-67
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:285:27-64
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:293:27-64
 service#com.easemob.chat.EMGCMListenerService
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:289:9-291:39
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:297:9-299:39
 	android:exported
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:291:13-37
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:299:13-37
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:290:13-65
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:298:13-65
 receiver#com.techscl.ichat.receiver.GCMPushBroadCast
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:293:9-300:20
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:301:9-308:20
 	android:exported
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:295:13-37
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:303:13-37
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:294:13-71
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:302:13-71
 intent-filter#com.easemob.chatuidemo+com.easemob.sdk.push
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:296:13-299:29
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:304:13-307:29
 action#com.easemob.sdk.push
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:297:17-63
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:305:17-63
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:297:25-60
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:305:25-60
 meta-data#EASEMOB_APPKEY
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:304:9-306:48
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:312:9-314:48
 	android:value
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:306:13-45
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:314:13-45
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:305:13-42
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:313:13-42
 service#com.easemob.chat.EMChatService
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:308:9-66
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:316:9-66
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:308:18-63
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:316:18-63
 receiver#com.easemob.chat.EMMonitorReceiver
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:310:9-319:20
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:318:9-327:20
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:310:19-68
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:318:19-68
 intent-filter#android.intent.action.PACKAGE_REMOVED
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:311:13-314:29
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:319:13-322:29
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:312:17-80
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:320:17-80
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:312:25-77
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:320:25-77
 data
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:313:17-50
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:321:17-50
 	android:scheme
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:313:23-47
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:321:23-47
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:315:13-318:29
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:323:13-326:29
 action#android.intent.action.USER_PRESENT
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:317:17-77
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:325:17-77
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:317:25-74
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:325:25-74
 service#com.baidu.location.f
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:322:9-325:41
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:330:9-333:41
 	android:enabled
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:324:13-35
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:332:13-35
 	android:process
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:325:13-38
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:333:13-38
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:323:13-48
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:331:13-48
 meta-data#UMENG_APPKEY
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:327:9-329:55
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:335:9-337:55
 	android:value
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:329:13-53
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:337:13-53
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:328:13-40
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:336:13-40
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:330:9-332:64
+ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:338:9-340:64
 	android:value
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:332:13-61
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:340:13-61
 	android:name
-		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:331:13-52
+		ADDED from /Users/dllo/Desktop/Android Studio/iChat/app/src/main/AndroidManifest.xml:339:13-52

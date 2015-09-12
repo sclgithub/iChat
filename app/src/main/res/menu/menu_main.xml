@@ -13,8 +13,8 @@
         android:title="@string/scanner_code"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/feedback"
         android:orderInCategory="100"
-        android:title="@string/setting"
+        android:title="@string/feedback"
         app:showAsAction="never" />
 </menu>

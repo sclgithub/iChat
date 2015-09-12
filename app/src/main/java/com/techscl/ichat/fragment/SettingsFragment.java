@@ -26,7 +26,6 @@ import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMChatOptions;
 import com.techscl.ichat.R;
 import com.techscl.ichat.activity.BlacklistActivity;
-import com.techscl.ichat.activity.DiagnoseActivity;
 import com.techscl.ichat.activity.LoginActivity;
 import com.techscl.ichat.activity.MainActivity;
 import com.techscl.ichat.activity.OfflinePushNickActivity;
@@ -126,48 +125,8 @@ public class SettingsFragment extends Fragment implements OnClickListener {
         super.onActivityCreated(savedInstanceState);
         if (savedInstanceState != null && savedInstanceState.getBoolean("isConflict", false))
             return;
-        rl_switch_notification = (RelativeLayout) getView().findViewById(R.id.rl_switch_notification);
-        rl_switch_sound = (RelativeLayout) getView().findViewById(R.id.rl_switch_sound);
-        rl_switch_vibrate = (RelativeLayout) getView().findViewById(R.id.rl_switch_vibrate);
-        rl_switch_speaker = (RelativeLayout) getView().findViewById(R.id.rl_switch_speaker);
-        rl_switch_chatroom_leave = (RelativeLayout) getView().findViewById(R.id.rl_switch_chatroom_owner_leave);
 
-        iv_switch_open_notification = (ImageView) getView().findViewById(R.id.iv_switch_open_notification);
-        iv_switch_close_notification = (ImageView) getView().findViewById(R.id.iv_switch_close_notification);
-        iv_switch_open_sound = (ImageView) getView().findViewById(R.id.iv_switch_open_sound);
-        iv_switch_close_sound = (ImageView) getView().findViewById(R.id.iv_switch_close_sound);
-        iv_switch_open_vibrate = (ImageView) getView().findViewById(R.id.iv_switch_open_vibrate);
-        iv_switch_close_vibrate = (ImageView) getView().findViewById(R.id.iv_switch_close_vibrate);
-        iv_switch_open_speaker = (ImageView) getView().findViewById(R.id.iv_switch_open_speaker);
-        iv_switch_close_speaker = (ImageView) getView().findViewById(R.id.iv_switch_close_speaker);
-
-        iv_switch_room_owner_leave_allow = (ImageView) getView().findViewById(R.id.iv_switch_chatroom_owner_leave_allow);
-        iv_switch_room_owner_leave_disallow = (ImageView) getView().findViewById(R.id.iv_switch_chatroom_owner_leave_not_allow);
-
-
-        logoutBtn = (Button) getView().findViewById(R.id.btn_logout);
-        if (!TextUtils.isEmpty(EMChatManager.getInstance().getCurrentUser())) {
-            logoutBtn.setText(getString(R.string.button_logout) + "(" + EMChatManager.getInstance().getCurrentUser() + ")");
-        }
-
-        textview1 = (TextView) getView().findViewById(R.id.textview1);
-        textview2 = (TextView) getView().findViewById(R.id.textview2);
-
-        blacklistContainer = (LinearLayout) getView().findViewById(R.id.ll_black_list);
-        userProfileContainer = (LinearLayout) getView().findViewById(R.id.ll_user_profile);
-        llDiagnose = (LinearLayout) getView().findViewById(R.id.ll_diagnose);
-        pushNick = (LinearLayout) getView().findViewById(R.id.ll_set_push_nick);
-
-        blacklistContainer.setOnClickListener(this);
-        userProfileContainer.setOnClickListener(this);
-        rl_switch_notification.setOnClickListener(this);
-        rl_switch_sound.setOnClickListener(this);
-        rl_switch_vibrate.setOnClickListener(this);
-        rl_switch_speaker.setOnClickListener(this);
-        logoutBtn.setOnClickListener(this);
-        llDiagnose.setOnClickListener(this);
-        pushNick.setOnClickListener(this);
-        rl_switch_chatroom_leave.setOnClickListener(this);
+        initView();
 
         chatOptions = EMChatManager.getInstance().getChatOptions();
 
@@ -223,7 +182,56 @@ public class SettingsFragment extends Fragment implements OnClickListener {
         }
     }
 
+    /**
+     * 初始化
+     */
+    private void initView() {
+        rl_switch_notification = (RelativeLayout) getView().findViewById(R.id.rl_switch_notification);
+        rl_switch_sound = (RelativeLayout) getView().findViewById(R.id.rl_switch_sound);
+        rl_switch_vibrate = (RelativeLayout) getView().findViewById(R.id.rl_switch_vibrate);
+        rl_switch_speaker = (RelativeLayout) getView().findViewById(R.id.rl_switch_speaker);
+        rl_switch_chatroom_leave = (RelativeLayout) getView().findViewById(R.id.rl_switch_chatroom_owner_leave);
 
+        iv_switch_open_notification = (ImageView) getView().findViewById(R.id.iv_switch_open_notification);
+        iv_switch_close_notification = (ImageView) getView().findViewById(R.id.iv_switch_close_notification);
+        iv_switch_open_sound = (ImageView) getView().findViewById(R.id.iv_switch_open_sound);
+        iv_switch_close_sound = (ImageView) getView().findViewById(R.id.iv_switch_close_sound);
+        iv_switch_open_vibrate = (ImageView) getView().findViewById(R.id.iv_switch_open_vibrate);
+        iv_switch_close_vibrate = (ImageView) getView().findViewById(R.id.iv_switch_close_vibrate);
+        iv_switch_open_speaker = (ImageView) getView().findViewById(R.id.iv_switch_open_speaker);
+        iv_switch_close_speaker = (ImageView) getView().findViewById(R.id.iv_switch_close_speaker);
+
+        iv_switch_room_owner_leave_allow = (ImageView) getView().findViewById(R.id.iv_switch_chatroom_owner_leave_allow);
+        iv_switch_room_owner_leave_disallow = (ImageView) getView().findViewById(R.id.iv_switch_chatroom_owner_leave_not_allow);
+
+
+        logoutBtn = (Button) getView().findViewById(R.id.btn_logout);
+        if (!TextUtils.isEmpty(EMChatManager.getInstance().getCurrentUser())) {
+            logoutBtn.setText(getString(R.string.button_logout) + "(" + EMChatManager.getInstance().getCurrentUser() + ")");
+        }
+
+        textview1 = (TextView) getView().findViewById(R.id.textview1);
+        textview2 = (TextView) getView().findViewById(R.id.textview2);
+
+        blacklistContainer = (LinearLayout) getView().findViewById(R.id.ll_black_list);
+        userProfileContainer = (LinearLayout) getView().findViewById(R.id.ll_user_profile);
+        pushNick = (LinearLayout) getView().findViewById(R.id.ll_set_push_nick);
+
+        blacklistContainer.setOnClickListener(this);
+        userProfileContainer.setOnClickListener(this);
+        rl_switch_notification.setOnClickListener(this);
+        rl_switch_sound.setOnClickListener(this);
+        rl_switch_vibrate.setOnClickListener(this);
+        rl_switch_speaker.setOnClickListener(this);
+        logoutBtn.setOnClickListener(this);
+        pushNick.setOnClickListener(this);
+        rl_switch_chatroom_leave.setOnClickListener(this);
+    }
+
+    /**
+     * 点击事件监听
+     * @param v
+     */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -317,9 +325,6 @@ public class SettingsFragment extends Fragment implements OnClickListener {
                 break;
             case R.id.ll_black_list:
                 startActivity(new Intent(getActivity(), BlacklistActivity.class));
-                break;
-            case R.id.ll_diagnose:
-                startActivity(new Intent(getActivity(), DiagnoseActivity.class));
                 break;
             case R.id.ll_set_push_nick:
                 startActivity(new Intent(getActivity(), OfflinePushNickActivity.class));

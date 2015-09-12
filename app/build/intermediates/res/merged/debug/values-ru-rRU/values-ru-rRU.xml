@@ -70,6 +70,7 @@
     <string name="em_user_remove">Данный пользователь был удален</string>
     <string name="exit_group">Выйти</string>
     <string name="exit_group_hint">Не получать сообщения при выходе из приложения</string>
+    <string name="feedback">反馈</string>
     <string name="file">[Документ]</string>
     <string name="forward">Переслать</string>
     <string name="friend_trends">好友动态</string>

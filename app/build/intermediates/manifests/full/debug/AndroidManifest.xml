@@ -262,6 +262,15 @@
         <activity
             android:name="com.techscl.ichat.activity.NewsListActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.techscl.ichat.activity.CodeScanActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.techscl.ichat.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <!-- 开机自启动服务 -->
         <receiver android:name="com.easemob.chat.StartServiceReceiver" >
             <intent-filter android:priority="1000" >

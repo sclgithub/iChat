@@ -287,7 +287,7 @@
     <string name="searching">正在搜索..</string>
     <string name="hanging_up">正在挂断..</string>
     <string name="illegal_user_name">用户名不合法</string>
-    <string name="robot_chat">iChat助手</string>
+    <string name="robot_chat">iChat服务</string>
     <string name="title_user_profile">个人资料</string>
     <string name="nickname">昵称</string>
     <string name="dl_title_upload_photo">上传头像</string>
@@ -320,4 +320,5 @@
     <string name="News_sources">新闻来源</string>
     <string name="author">作者</string>
     <string name="hot">热度:</string>
+    <string name="feedback">反馈</string>
 </resources>

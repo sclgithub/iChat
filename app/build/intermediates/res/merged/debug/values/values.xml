@@ -48,6 +48,7 @@
     <color name="background_material_light">@color/material_grey_50</color>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="bg_color">#EDEDED</color>
     <color name="black_deep">#FF000000</color>
     <color name="blue">#4876FF</color>
     <color name="bottom_bar_normal_bg">#2D2F31</color>
@@ -97,6 +98,7 @@
     <color name="common_bottom_bar_selected_bg">#161718</color>
     <color name="common_botton_bar_blue">#2ea7e0</color>
     <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="contents_text">#ff000000</color>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/vpi__defaults.xml -->
     <eat-comment/>
     <color name="default_circle_indicator_fill_color">#999999</color>
@@ -117,6 +119,7 @@
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="divider_list">#d4d4d4</color>
+    <color name="encode_view">#ffffffff</color>
     <color name="error_item_color">#F6EBE6</color>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -127,14 +130,22 @@
     <color name="gray">#979797</color>
     <color name="gray_normal">#666667</color>
     <color name="gray_pressed">#b5b5b6</color>
+    <color name="green">#00CC00</color>
     <color name="grid_state_focused">#80000000</color>
     <color name="grid_state_pressed">#1Affffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="lightgreen">#99CC33</color>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -150,6 +161,7 @@
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="orange">#FFA500</color>
+    <color name="possible_result_points">#c0ffff00</color>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -163,6 +175,12 @@
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="red">#D33F3F</color>
+    <color name="red_f9">#f9702d</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#42ffffff</color>
@@ -178,8 +196,13 @@
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="top_bar_normal_bg">#00acff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
     <color name="voip_interface_text_color">#bababa</color>
     <color name="white">#FFFFFF</color>
+    <color name="white_gray">#ffdddddd</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
@@ -357,9 +380,33 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="home" type="id"/>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="launch_product_query" type="id"/>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
@@ -588,6 +635,7 @@
     <string name="expression">[expression]</string>
     <string name="failed_to_load_data">Failed to load data, please check network or try again later</string>
     <string name="failed_to_move_into">Failed to move to the blacklist, please check the network or try again later</string>
+    <string name="feedback">feedback</string>
     <string name="file">[file]</string>
     <string name="find">Find</string>
     <string name="forward">Forward</string>
