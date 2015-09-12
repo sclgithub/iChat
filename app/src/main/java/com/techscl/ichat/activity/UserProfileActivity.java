@@ -161,8 +161,8 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
                         dialog.dismiss();
                         switch (which) {
                             case 0:
-                                Toast.makeText(UserProfileActivity.this, getString(R.string.toast_no_support),
-                                        Toast.LENGTH_SHORT).show();
+                                Toast.makeText(UserProfileActivity.this, getString(R.string.toast_no_support), Toast.LENGTH_SHORT).show();
+
                                 break;
                             case 1:
                                 Intent pickIntent = new Intent(Intent.ACTION_PICK, null);

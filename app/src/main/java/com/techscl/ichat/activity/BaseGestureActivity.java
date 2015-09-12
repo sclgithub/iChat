@@ -1,5 +1,6 @@
 package com.techscl.ichat.activity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.GestureDetector;
@@ -21,8 +22,12 @@ public class BaseGestureActivity extends FragmentActivity implements  GestureDet
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);// 设置透明状态栏
-        gestureDetector = new GestureDetector(this);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            //透明状态栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            //透明导航栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }        gestureDetector = new GestureDetector(this);
 
     }
 

@@ -338,6 +338,7 @@
     <eat-comment/>
     <dimen name="field_margin_right">5dp</dimen>
     <dimen name="field_textsize">14sp</dimen>
+    <dimen name="height_chat_bar">46dp</dimen>
     <dimen name="height_row_weixin">59dp</dimen>
     <dimen name="height_top_bar">62dp</dimen>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
