@@ -22,6 +22,9 @@ import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.mapapi.map.MapView;
 import com.easemob.EMCallBack;
 import com.easemob.EMConnectionListener;
 import com.easemob.EMError;
@@ -69,8 +72,12 @@ import java.util.UUID;
 
 public class MainActivity extends BaseActivity implements EMEventListener {
     public static RequestQueue requestQueue;
+    public static BaiduMapActivity instance = null;
+    static MapView mMapView = null;
+    static BDLocation lastLocation = null;
     // 账号在别处登录
     public boolean isConflict = false;
+    public LocationClient mLocationClient = null;
     // 未读消息textview
     private TextView unreadLabel;
     // 未读通讯录textview
@@ -267,6 +274,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestQueue = Volley.newRequestQueue(this);
+
         if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
             // 防止被移除后，没点确定按钮然后按了home键，长期在后台又进app导致的crash
             // 三个fragment里加的判断同理
@@ -315,6 +323,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         init();
         //异步获取当前用户的昵称和头像
         ((DemoHXSDKHelper) HXSDKHelper.getInstance()).getUserProfileManager().asyncGetCurrentUserInfo();
+
     }
 
     private void init() {
@@ -1086,4 +1095,5 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             // 加群申请被拒绝，demo未实现
         }
     }
+
 }

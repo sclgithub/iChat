@@ -31,13 +31,18 @@ public class AddContactActivity extends BaseGestureActivity {
     private String toAddUsername;
     private ProgressDialog progressDialog;
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
 
         initView();
-
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+        if (username != "") {
+            editText.setText(username);
+        }
         String strAdd = getResources().getString(R.string.add_friend);
         String strUserName = getResources().getString(R.string.user_name);
         editText.setHint(strUserName);
@@ -54,7 +59,7 @@ public class AddContactActivity extends BaseGestureActivity {
         nameText = (TextView) findViewById(R.id.name);
         searchBtn = (Button) findViewById(R.id.search);
         avatar = (ImageView) findViewById(R.id.avatar);
-        toolbar= (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(getString(R.string.add_friend));
         toolbar.setNavigationIcon(R.mipmap.back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

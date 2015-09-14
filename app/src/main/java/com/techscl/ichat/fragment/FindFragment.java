@@ -13,23 +13,34 @@ import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
 import com.google.gson.Gson;
 import com.techscl.ichat.R;
 import com.techscl.ichat.activity.MainActivity;
 import com.techscl.ichat.activity.NewsListActivity;
+import com.techscl.ichat.base.AQI;
 import com.techscl.ichat.base.MyStringRequest;
 import com.techscl.ichat.base.Weather;
 import com.techscl.ichat.utils.FormatCodeUtil;
 import com.techscl.ichat.utils.L;
+
+import pl.droidsonroids.gif.GifImageView;
 
 
 /**
  * Created by 宋春麟 on 15/8/27.
  */
 public class FindFragment extends Fragment implements View.OnClickListener {
+    private static final int UPDATE_TIME = 5000;
+    private static int LOCATION_COUTNS = 0;
     private TableRow news_rss;
-    private TextView weather, max_temp, min_temp, wind, pm25;
+    private TextView weather, max_temp, min_temp, wind, pm25, address, aqi_notice;
     private Toolbar toolbar;
+    private LocationClient locationClient = null;
+    private GifImageView gifImageView;
 
     @Nullable
     @Override
@@ -39,10 +50,78 @@ public class FindFragment extends Fragment implements View.OnClickListener {
 
         initView(view);
 
-        getWeather(FormatCodeUtil.codingFormat("大连"));
+        getPosition();
 
         return view;
 
+    }
+
+    /**
+     * 获取位置
+     */
+    private void getPosition() {
+        locationClient = new LocationClient(getActivity());
+        //设置定位条件
+        LocationClientOption option = new LocationClientOption();
+        option.setOpenGps(true);        //是否打开GPS
+        option.setCoorType("bd09ll");       //设置返回值的坐标类型。
+        option.setPriority(LocationClientOption.NetWorkFirst);  //设置定位优先级
+        option.setProdName("LocationDemo"); //设置产品线名称。强烈建议您使用自定义的产品线名称，方便我们以后为您提供更高效准确的定位服务。
+        option.setScanSpan(UPDATE_TIME);    //设置定时定位的时间间隔。单位毫秒
+        option.setAddrType("all");// 返回定位地址
+        locationClient.setLocOption(option);
+
+        //注册位置监听器
+        locationClient.registerLocationListener(new BDLocationListener() {
+
+            @Override
+            public void onReceiveLocation(BDLocation location) {
+                // TODO Auto-generated method stub
+                if (location == null) {
+                    return;
+                }
+                StringBuffer sb = new StringBuffer(256);
+                sb.append("Time : ");
+                sb.append(location.getTime());
+                sb.append("\nError code : ");
+                sb.append(location.getLocType());
+                sb.append("\nLatitude : ");
+                sb.append(location.getLatitude());
+                sb.append("\nLontitude : ");
+                sb.append(location.getLongitude());
+                sb.append("\nRadius : ");
+                sb.append(location.getRadius());
+                if (location.getLocType() == BDLocation.TypeGpsLocation) {
+                    sb.append("\nSpeed : ");
+                    sb.append(location.getSpeed());
+                    sb.append("\nSatellite : ");
+                    sb.append(location.getSatelliteNumber());
+                } else if (location.getLocType() == BDLocation.TypeNetWorkLocation) {
+                    sb.append("\nAddress : ");
+                    sb.append(location.getAddrStr());
+                }
+                LOCATION_COUTNS++;
+                sb.append("\n检查位置更新次数：");
+                sb.append(String.valueOf(LOCATION_COUTNS));
+                if (location != null) {
+                    L.i(location.getAddrStr());
+                    String[] temp = location.getAddrStr().split("省");
+                    L.i(temp[0]);
+                    address.setText(location.getAddrStr());
+                    String[] address = temp[1].split("市");
+                    L.i(address[0]);
+                    getWeather(FormatCodeUtil.codingFormat(address[0]));
+                    getAQI(FormatCodeUtil.codingFormat(address[0]));
+                    locationClient.stop();
+                }
+            }
+
+            @Override
+            public void onReceivePoi(BDLocation location) {
+            }
+
+        });
+        locationClient.start();
     }
 
     private void getWeather(String area) {
@@ -52,18 +131,64 @@ public class FindFragment extends Fragment implements View.OnClickListener {
                 Gson gson = new Gson();// 实例化gson对象
                 Weather weathers = gson.fromJson(s, Weather.class);
                 L.i("天气:" + s.length());
-                L.i("weather"+s);
-                if (s.length()>50) {
-                    weather.setText(weathers.getRetData().getWeather());
-                    max_temp.setText(weathers.getRetData().getH_tmp());
-                    min_temp.setText(weathers.getRetData().getL_tmp());
-                    wind.setText(weathers.getRetData().getWD());
+                L.i("weather" + s);
+                if (s.length() > 50) {
+                    weather.setText("天气:" + weathers.getRetData().getWeather());
+                    if (weathers.getRetData().getWeather().toString().equals("晴")) {
+                        gifImageView.setImageResource(R.drawable.sunny);
+                    } else if (weathers.getRetData().getWeather().toString().contains("多云")) {
+                        gifImageView.setImageResource(R.drawable.cloudy);
+                    } else if (weathers.getRetData().getWeather().toString().contains("雪")) {
+                        gifImageView.setImageResource(R.drawable.snow);
+                    } else if (weathers.getRetData().getWeather().toString().contains("雷阵雨")) {
+                        gifImageView.setImageResource(R.drawable.rain);
+                    } else if (weathers.getRetData().getWeather().toString().contains("雨")) {
+                        gifImageView.setImageResource(R.drawable.lighting);
+                    }
+                    max_temp.setText("气温:" + weathers.getRetData().getTemp() + "℃");
+                    min_temp.setText("温差:" + weathers.getRetData().getL_tmp() + "℃-" + weathers.getRetData().getH_tmp() + "℃");
+                    wind.setText(weathers.getRetData().getWD() + weathers.getRetData().getWS());
                 } else {
                     weather.setText("多云");
                     max_temp.setText("25℃");
                     min_temp.setText("21℃");
                     wind.setText("东南风4-5级");
                     pm25.setText("35");
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        });
+        MainActivity.requestQueue.add(stringRequest);
+    }
+
+    /**
+     * 获取空气污染指数
+     *
+     * @param area
+     */
+    private void getAQI(String area) {
+        MyStringRequest stringRequest = new MyStringRequest("http://apistore.baidu.com/microservice/aqi?city=" + area, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String s) {
+                Gson gson = new Gson();// 实例化gson对象
+                AQI aqi = gson.fromJson(s, AQI.class);
+                pm25.setText("AQI指数:" + aqi.getRetData().getAqi() + "," + aqi.getRetData().getLevel());
+                if (aqi.getRetData().getAqi() <= 50) {
+                    aqi_notice.setText(getString(R.string.aqi_a));
+                } else if (aqi.getRetData().getAqi() <= 100) {
+                    aqi_notice.setText(getString(R.string.aqi_b));
+                } else if (aqi.getRetData().getAqi() <= 150) {
+                    aqi_notice.setText(getString(R.string.aqi_b));
+                } else if (aqi.getRetData().getAqi() <= 200) {
+                    aqi_notice.setText(getString(R.string.aqi_b));
+                } else if (aqi.getRetData().getAqi() <= 300) {
+                    aqi_notice.setText(getString(R.string.aqi_b));
+                } else {
+                    aqi_notice.setText(getString(R.string.aqi_b));
                 }
             }
         }, new Response.ErrorListener() {
@@ -88,6 +213,9 @@ public class FindFragment extends Fragment implements View.OnClickListener {
         wind = (TextView) view.findViewById(R.id.wind);
         pm25 = (TextView) view.findViewById(R.id.pm25);
         news_rss.setOnClickListener(this);
+        gifImageView = (GifImageView) view.findViewById(R.id.gifImageView);
+        address = (TextView) view.findViewById(R.id.address);
+        aqi_notice = (TextView) view.findViewById(R.id.aqi_notice);
     }
 
     /**
@@ -99,9 +227,10 @@ public class FindFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.news_rss:
-                startActivity(new Intent(getActivity(),NewsListActivity.class));
+                startActivity(new Intent(getActivity(), NewsListActivity.class));
                 break;
         }
     }
+
 
 }

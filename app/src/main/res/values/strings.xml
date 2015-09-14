@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+    <string name="positioning">获取当前位置...</string>
     <string name="app_name">iChat</string>
     <string name="text_ack_msg">Read</string>
     <string name="text_delivered_msg">Delivered</string>
@@ -311,4 +311,11 @@
     <string name="author">author</string>
     <string name="hot">hot:</string>
     <string name="feedback">feedback</string>
+
+    <string name="aqi_a">空气很好,出去活动一下吧!</string>
+    <string name="aqi_b">空气不错,敏感人群需要适当防范</string>
+    <string name="aqi_c">应该适当减少室外活动</string>
+    <string name="aqi_d">建议取消户外运动</string>
+    <string name="aqi_e">停止户外运动</string>
+    <string name="aqi_f">老实儿在家呆着!</string>
 </resources>

@@ -9,18 +9,15 @@ import com.techscl.ichat.base.DemoHXSDKHelper;
 public class LoveChatApp extends Application {
 
     public static Context applicationContext;
+    private static LoveChatApp instance;
+    // login user name
+    public final String PREF_USERNAME = "username";
+
     /**
      * 当前用户nickname,为了苹果推送不是userid而是昵称
      */
     public static String currentUserNick = "";
     public static DemoHXSDKHelper hxSDKHelper = new DemoHXSDKHelper();
-    private static LoveChatApp instance;
-    // login user name
-    public final String PREF_USERNAME = "username";
-
-    public static LoveChatApp getInstance() {
-        return instance;
-    }
 
     @Override
     public void onCreate() {
@@ -49,6 +46,11 @@ public class LoveChatApp extends Application {
         hxSDKHelper.onInit(applicationContext);
     }
 
+    public static LoveChatApp getInstance() {
+        return instance;
+    }
+
+
     /**
      * 获取当前登陆用户名
      *
@@ -59,19 +61,19 @@ public class LoveChatApp extends Application {
     }
 
     /**
-     * 设置用户名
-     */
-    public void setUserName(String username) {
-        hxSDKHelper.setHXId(username);
-    }
-
-    /**
      * 获取密码
      *
      * @return
      */
     public String getPassword() {
         return hxSDKHelper.getPassword();
+    }
+
+    /**
+     * 设置用户名
+     **/
+    public void setUserName(String username) {
+        hxSDKHelper.setHXId(username);
     }
 
     /**
@@ -87,8 +89,8 @@ public class LoveChatApp extends Application {
     /**
      * 退出登录,清空数据
      */
-    public void logout(final boolean isGCM, final EMCallBack emCallBack) {
+    public void logout(final boolean isGCM,final EMCallBack emCallBack) {
         // 先调用sdk logout，在清理app中自己的数据
-        hxSDKHelper.logout(isGCM, emCallBack);
+        hxSDKHelper.logout(isGCM,emCallBack);
     }
 }

@@ -141,6 +141,12 @@
     <string name="agree">同意</string>
     <string name="answer">接听</string>
     <string name="app_name">iChat</string>
+    <string name="aqi_a">空气很好,出去活动一下吧!</string>
+    <string name="aqi_b">空气不错,敏感人群需要适当防范</string>
+    <string name="aqi_c">应该适当减少室外活动</string>
+    <string name="aqi_d">建议取消户外运动</string>
+    <string name="aqi_e">停止户外运动</string>
+    <string name="aqi_f">老实儿在家呆着!</string>
     <string name="are_empty_group_of_news">正在清空群消息...</string>
     <string name="attach_file">文件</string>
     <string name="attach_location">位置</string>
@@ -273,6 +279,7 @@
     <string name="picture">[图片]</string>
     <string name="please_check">key 验证出错! 请在 AndroidManifest.xml 文件中检查 key 设置</string>
     <string name="please_set_the_current">设置当前用户的昵称\n用于ios离线推送时显示用户昵称</string>
+    <string name="positioning">获取当前位置...</string>
     <string name="prompt">提示</string>
     <string name="push_nick">iOS离线推送昵称</string>
     <string name="receive_the_passthrough">收到透传：action：</string>

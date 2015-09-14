@@ -216,6 +216,8 @@
     <declare-styleable name="CompoundButton"><attr name="android:button"/><attr format="color" name="buttonTint"/><attr name="buttonTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="Emojicon"><attr format="dimension" name="emojiconSize"/><attr format="integer" name="emojiconTextStart"/><attr format="integer" name="emojiconTextLength"/></declare-styleable>
+    <declare-styleable name="GifTextureView"><attr format="reference|string" name="gifSource"/><attr format="boolean" name="isOpaque"/></declare-styleable>
+    <declare-styleable name="GifView"><attr format="boolean" name="freezesAnimation"/></declare-styleable>
     <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
@@ -563,6 +565,12 @@
     <string name="agree">Agree</string>
     <string name="answer">Answer</string>
     <string name="app_name">iChat</string>
+    <string name="aqi_a">空气很好,出去活动一下吧!</string>
+    <string name="aqi_b">空气不错,敏感人群需要适当防范</string>
+    <string name="aqi_c">应该适当减少室外活动</string>
+    <string name="aqi_d">建议取消户外运动</string>
+    <string name="aqi_e">停止户外运动</string>
+    <string name="aqi_f">老实儿在家呆着!</string>
     <string name="are_empty_group_of_news">Clearing messages</string>
     <string name="attach_file">File</string>
     <string name="attach_location">Location</string>
@@ -696,6 +704,7 @@
     <string name="picture">[Picture]</string>
     <string name="please_check">key validation error!Please on AndroidManifest.xml file check the key set</string>
     <string name="please_set_the_current">"Please set the current user's nickname \ n to ios offline push not userid but Nick, see comments"</string>
+    <string name="positioning">获取当前位置...</string>
     <string name="prompt">Prompt</string>
     <string name="push_nick">IOS offline push nick</string>
     <string name="receive_the_passthrough">Receive cmd message : action：</string>
