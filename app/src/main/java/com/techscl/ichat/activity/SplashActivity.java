@@ -31,7 +31,7 @@ public class SplashActivity extends BaseGestureActivity {
         versionText = (TextView) findViewById(R.id.tv_version);
 
         versionText.setText(getVersion());
-        AlphaAnimation animation = new AlphaAnimation(0.3f, 1.0f);
+        AlphaAnimation animation = new AlphaAnimation(0f, 1.0f);
         animation.setDuration(1500);
         rootLayout.startAnimation(animation);
     }

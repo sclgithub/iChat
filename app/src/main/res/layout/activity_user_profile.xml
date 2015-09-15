@@ -112,6 +112,44 @@
                 android:layout_margin="5dip"
                 android:src="@drawable/ic_right_arrow" />
         </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:text="@string/my_qr_code"
+                android:textColor="#808080"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingRight="20dip"
+                android:textColor="#3366cc"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

@@ -256,6 +256,7 @@
     <string name="move_out_backlist">移出黑名单</string>
     <string name="move_up_to_cancel">手指上滑，取消发送</string>
     <string name="mute">静音</string>
+    <string name="my_qr_code">我的二维码</string>
     <string name="nearby_friends">身边</string>
     <string name="network_anomalies">网络异常，请检查网络！</string>
     <string name="network_isnot_available">网络不可用</string>

@@ -8,28 +8,32 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.techscl.ichat.R;
 import com.techscl.ichat.applib.controller.HXSDKHelper;
 import com.techscl.ichat.skin.ExitApplication;
 import com.techscl.ichat.skin.SkinSettingManager;
 import com.techscl.ichat.utils.To;
 import com.umeng.analytics.MobclickAgent;
 
-public class BaseGestureActivity extends FragmentActivity implements  GestureDetector.OnGestureListener, View.OnTouchListener {
+public class BaseGestureActivity extends FragmentActivity implements GestureDetector.OnGestureListener, View.OnTouchListener {
 
     private GestureDetector gestureDetector;
     private int verticalMinDistance = 30;
     private int middleDistance = 150;
     private int minVelocity = 0;
     private SkinSettingManager mSettingManager;
+
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        this.overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //透明状态栏
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             //透明导航栏
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }        gestureDetector = new GestureDetector(this);
+        }
+        gestureDetector = new GestureDetector(this);
 
     }
 
@@ -44,7 +48,7 @@ public class BaseGestureActivity extends FragmentActivity implements  GestureDet
 
         ExitApplication.getInstance().addActivity(this);
 //	     Define.setTitle(this);
-        mSettingManager=new SkinSettingManager(this);
+        mSettingManager = new SkinSettingManager(this);
         mSettingManager.initSkins();
 
 
@@ -113,6 +117,12 @@ public class BaseGestureActivity extends FragmentActivity implements  GestureDet
     public boolean dispatchTouchEvent(MotionEvent ev) {
         gestureDetector.onTouchEvent(ev);
         return super.dispatchTouchEvent(ev);
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        this.overridePendingTransition(R.anim.slide_in_from_left, R.anim.slide_out_to_right);
     }
 
 }

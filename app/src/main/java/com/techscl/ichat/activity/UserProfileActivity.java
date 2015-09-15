@@ -25,12 +25,14 @@ import android.widget.Toast;
 
 import com.easemob.EMValueCallBack;
 import com.easemob.chat.EMChatManager;
+import com.google.zxing.WriterException;
 import com.squareup.picasso.Picasso;
 import com.techscl.ichat.R;
 import com.techscl.ichat.applib.controller.HXSDKHelper;
 import com.techscl.ichat.base.DemoHXSDKHelper;
 import com.techscl.ichat.domain.User;
 import com.techscl.ichat.utils.UserUtils;
+import com.techscl.ichat.zxing.encoding.EncodingHandler;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -47,7 +49,7 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
     private TextView tvNickName;
     private TextView tvUsername;
     private ProgressDialog dialog;
-    private RelativeLayout rlNickName;
+    private RelativeLayout rlNickName, rlQrCode;
     private Toolbar toolbar;
     private LinearLayout header_view_background;
 
@@ -82,7 +84,8 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
             }
         });
         header_view_background = (LinearLayout) findViewById(R.id.header_view_background);
-
+        rlQrCode = (RelativeLayout) findViewById(R.id.rl_qr_code);
+        rlQrCode.setOnClickListener(this);
     }
 
     private void initListener() {
@@ -135,6 +138,21 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
                                 updateRemoteNick(nickString);
                             }
                         }).setNegativeButton(R.string.dl_cancel, null).show();
+                break;
+            case R.id.rl_qr_code:
+                ImageView imageView = new ImageView(this);
+                imageView.setBackgroundColor(getResources().getColor(R.color.white));
+                try {
+                    Bitmap qrCodeBitmap = EncodingHandler.createQRCode(tvUsername.getText().toString(), 800);
+                    imageView.setImageBitmap(qrCodeBitmap);
+                    new AlertDialog.Builder(this)
+                            .setTitle(getString(R.string.my_qr_code))
+                            .setView(imageView)
+                            .setPositiveButton(getString(R.string.dl_ok), null)
+                            .show();
+                } catch (WriterException e) {
+                    e.printStackTrace();
+                }
                 break;
             default:
                 break;

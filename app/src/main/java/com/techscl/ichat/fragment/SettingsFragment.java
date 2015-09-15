@@ -43,75 +43,26 @@ import com.techscl.ichat.base.DemoHXSDKModel;
 public class SettingsFragment extends Fragment implements OnClickListener {
 
     DemoHXSDKModel model;
-    /**
-     * 设置新消息通知布局
-     */
     private RelativeLayout rl_switch_notification;
-    /**
-     * 设置声音布局
-     */
     private RelativeLayout rl_switch_sound;
-    /**
-     * 设置震动布局
-     */
     private RelativeLayout rl_switch_vibrate;
-    /**
-     * 设置扬声器布局
-     */
     private RelativeLayout rl_switch_speaker;
-    /**
-     * 打开新消息通知imageView
-     */
     private ImageView iv_switch_open_notification;
-    /**
-     * 关闭新消息通知imageview
-     */
     private ImageView iv_switch_close_notification;
-    /**
-     * 打开声音提示imageview
-     */
     private ImageView iv_switch_open_sound;
-    /**
-     * 关闭声音提示imageview
-     */
     private ImageView iv_switch_close_sound;
-    /**
-     * 打开消息震动提示
-     */
     private ImageView iv_switch_open_vibrate;
-    /**
-     * 关闭消息震动提示
-     */
     private ImageView iv_switch_close_vibrate;
-    /**
-     * 打开扬声器播放语音
-     */
     private ImageView iv_switch_open_speaker;
-    /**
-     * 关闭扬声器播放语音
-     */
     private ImageView iv_switch_close_speaker;
-    /**
-     * 声音和震动中间的那条线
-     */
     private TextView textview1, textview2;
     private LinearLayout blacklistContainer;
     private LinearLayout userProfileContainer;
-    /**
-     * 退出按钮
-     */
     private Button logoutBtn;
     private RelativeLayout rl_switch_chatroom_leave;
     private ImageView iv_switch_room_owner_leave_allow;
     private ImageView iv_switch_room_owner_leave_disallow;
     private EMChatOptions chatOptions;
-    /**
-     * 诊断
-     */
-    private LinearLayout llDiagnose;
-    /**
-     * iOS离线推送昵称
-     */
     private LinearLayout pushNick;
 
     @Override

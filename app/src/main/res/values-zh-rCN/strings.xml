@@ -290,6 +290,7 @@
     <string name="robot_chat">iChat服务</string>
     <string name="title_user_profile">个人资料</string>
     <string name="nickname">昵称</string>
+    <string name="my_qr_code">我的二维码</string>
     <string name="dl_title_upload_photo">上传头像</string>
     <string name="dl_msg_local_upload">本地上传</string>
     <string name="dl_msg_take_photo">拍照上传</string>

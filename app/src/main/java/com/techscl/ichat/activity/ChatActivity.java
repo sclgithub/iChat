@@ -204,6 +204,7 @@ public class ChatActivity extends BaseActivity implements OnClickListener, EMEve
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
         setContentView(R.layout.activity_chat);
         activityInstance = this;
         initView();
@@ -1738,4 +1739,12 @@ public class ChatActivity extends BaseActivity implements OnClickListener, EMEve
         }
 
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        this.overridePendingTransition(R.anim.slide_in_from_left, R.anim.slide_out_to_right);
+    }
+
+
 }

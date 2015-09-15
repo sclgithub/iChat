@@ -683,6 +683,7 @@
     <string name="move_out_backlist">Remove from blacklist</string>
     <string name="move_up_to_cancel">Finger up to cancel sending</string>
     <string name="mute">Mute</string>
+    <string name="my_qr_code">我的二维码</string>
     <string name="nearby_friends">nearby_friends</string>
     <string name="network_anomalies">Network is not available, please check the network!</string>
     <string name="network_isnot_available">The network is not available</string>
