@@ -19,9 +19,9 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.google.gson.Gson;
 import com.techscl.ichat.R;
+import com.techscl.ichat.activity.CodeScanActivity;
 import com.techscl.ichat.activity.MainActivity;
 import com.techscl.ichat.activity.NewsListActivity;
-import com.techscl.ichat.base.AQI;
 import com.techscl.ichat.base.MyStringRequest;
 import com.techscl.ichat.base.Weather;
 import com.techscl.ichat.utils.FormatCodeUtil;
@@ -36,7 +36,7 @@ import pl.droidsonroids.gif.GifImageView;
 public class FindFragment extends Fragment implements View.OnClickListener {
     private static final int UPDATE_TIME = 5000;
     private static int LOCATION_COUTNS = 0;
-    private TableRow news_rss;
+    private TableRow news_rss, nearby, shakes, scanner_code;
     private TextView weather, max_temp, min_temp, wind, pm25, address, aqi_notice;
     private Toolbar toolbar;
     private LocationClient locationClient = null;
@@ -111,7 +111,7 @@ public class FindFragment extends Fragment implements View.OnClickListener {
                     String[] address = temp[1].split("市");
                     L.i(address[0]);
                     getWeather(FormatCodeUtil.codingFormat(address[0]));
-                    getAQI(FormatCodeUtil.codingFormat(address[0]));
+
                     locationClient.stop();
                 }
             }
@@ -125,7 +125,7 @@ public class FindFragment extends Fragment implements View.OnClickListener {
     }
 
     private void getWeather(String area) {
-        MyStringRequest stringRequest = new MyStringRequest("http://apistore.baidu.com/microservice/weather?cityname=" + area, new Response.Listener<String>() {
+        MyStringRequest stringRequest = new MyStringRequest("http://v.juhe.cn/weather/index?format=2&cityname=" + area + "&key=74391d620131c3f27625cde9fab699af", new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
                 Gson gson = new Gson();// 实例化gson对象
@@ -133,21 +133,23 @@ public class FindFragment extends Fragment implements View.OnClickListener {
                 L.i("天气:" + s.length());
                 L.i("weather" + s);
                 if (s.length() > 50) {
-                    weather.setText("天气:" + weathers.getRetData().getWeather());
-                    if (weathers.getRetData().getWeather().toString().equals("晴")) {
+                    weather.setText("天气:" + weathers.getResult().getToday().getWeather());
+                    if (weathers.getResult().getToday().getWeather().toString().equals("晴")) {
                         gifImageView.setImageResource(R.drawable.sunny);
-                    } else if (weathers.getRetData().getWeather().toString().contains("多云")) {
+                    } else if (weathers.getResult().getToday().getWeather().toString().contains("多云")) {
                         gifImageView.setImageResource(R.drawable.cloudy);
-                    } else if (weathers.getRetData().getWeather().toString().contains("雪")) {
+                    } else if (weathers.getResult().getToday().getWeather().toString().contains("雪")) {
                         gifImageView.setImageResource(R.drawable.snow);
-                    } else if (weathers.getRetData().getWeather().toString().contains("雷阵雨")) {
+                    } else if (weathers.getResult().getToday().getWeather().toString().contains("雷阵雨")) {
                         gifImageView.setImageResource(R.drawable.rain);
-                    } else if (weathers.getRetData().getWeather().toString().contains("雨")) {
+                    } else if (weathers.getResult().getToday().getWeather().toString().contains("雨")) {
                         gifImageView.setImageResource(R.drawable.lighting);
                     }
-                    max_temp.setText("气温:" + weathers.getRetData().getTemp() + "℃");
-                    min_temp.setText("温差:" + weathers.getRetData().getL_tmp() + "℃-" + weathers.getRetData().getH_tmp() + "℃");
-                    wind.setText(weathers.getRetData().getWD() + weathers.getRetData().getWS());
+                    max_temp.setText("气温:" + weathers.getResult().getSk().getTemp() + "℃");
+                    min_temp.setText("温差:" + weathers.getResult().getToday().getTemperature());
+                    wind.setText(weathers.getResult().getSk().getWind_direction()+weathers.getResult().getSk().getWind_strength());
+                    pm25.setText("紫外线强度:"+weathers.getResult().getToday().getUv_index());
+                    aqi_notice.setText(weathers.getResult().getToday().getDressing_advice());
                 } else {
                     weather.setText("多云");
                     max_temp.setText("25℃");
@@ -165,40 +167,40 @@ public class FindFragment extends Fragment implements View.OnClickListener {
         MainActivity.requestQueue.add(stringRequest);
     }
 
-    /**
-     * 获取空气污染指数
-     *
-     * @param area
-     */
-    private void getAQI(String area) {
-        MyStringRequest stringRequest = new MyStringRequest("http://apistore.baidu.com/microservice/aqi?city=" + area, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String s) {
-                Gson gson = new Gson();// 实例化gson对象
-                AQI aqi = gson.fromJson(s, AQI.class);
-                pm25.setText("AQI指数:" + aqi.getRetData().getAqi() + "," + aqi.getRetData().getLevel());
-                if (aqi.getRetData().getAqi() <= 50) {
-                    aqi_notice.setText(getString(R.string.aqi_a));
-                } else if (aqi.getRetData().getAqi() <= 100) {
-                    aqi_notice.setText(getString(R.string.aqi_b));
-                } else if (aqi.getRetData().getAqi() <= 150) {
-                    aqi_notice.setText(getString(R.string.aqi_b));
-                } else if (aqi.getRetData().getAqi() <= 200) {
-                    aqi_notice.setText(getString(R.string.aqi_b));
-                } else if (aqi.getRetData().getAqi() <= 300) {
-                    aqi_notice.setText(getString(R.string.aqi_b));
-                } else {
-                    aqi_notice.setText(getString(R.string.aqi_b));
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError volleyError) {
-
-            }
-        });
-        MainActivity.requestQueue.add(stringRequest);
-    }
+//    /**
+//     * 获取空气污染指数
+//     *
+//     * @param area
+//     */
+//    private void getAQI(String area) {
+//        MyStringRequest stringRequest = new MyStringRequest("http://v.juhe.cn/weather/index?format=2&cityname=" + area + "&key=74391d620131c3f27625cde9fab699af", new Response.Listener<String>() {
+//            @Override
+//            public void onResponse(String s) {
+//                Gson gson = new Gson();// 实例化gson对象
+//                AQI aqi = gson.fromJson(s, AQI.class);
+//                pm25.setText("AQI指数:" + aqi.getRetData().getAqi() + "," + aqi.getRetData().getLevel());
+//                if (aqi.getRetData().getAqi() <= 50) {
+//                    aqi_notice.setText(getString(R.string.aqi_a));
+//                } else if (aqi.getRetData().getAqi() <= 100) {
+//                    aqi_notice.setText(getString(R.string.aqi_b));
+//                } else if (aqi.getRetData().getAqi() <= 150) {
+//                    aqi_notice.setText(getString(R.string.aqi_c));
+//                } else if (aqi.getRetData().getAqi() <= 200) {
+//                    aqi_notice.setText(getString(R.string.aqi_d));
+//                } else if (aqi.getRetData().getAqi() <= 300) {
+//                    aqi_notice.setText(getString(R.string.aqi_e));
+//                } else {
+//                    aqi_notice.setText(getString(R.string.aqi_f));
+//                }
+//            }
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError volleyError) {
+//
+//            }
+//        });
+//        MainActivity.requestQueue.add(stringRequest);
+//    }
 
     /**
      * 初始化
@@ -216,6 +218,12 @@ public class FindFragment extends Fragment implements View.OnClickListener {
         gifImageView = (GifImageView) view.findViewById(R.id.gifImageView);
         address = (TextView) view.findViewById(R.id.address);
         aqi_notice = (TextView) view.findViewById(R.id.aqi_notice);
+        scanner_code = (TableRow) view.findViewById(R.id.scanner_code);
+        nearby = (TableRow) view.findViewById(R.id.nearby);
+        shakes = (TableRow) view.findViewById(R.id.shakes);
+        scanner_code.setOnClickListener(this);
+        nearby.setOnClickListener(this);
+        shakes.setOnClickListener(this);
     }
 
     /**
@@ -228,6 +236,12 @@ public class FindFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.news_rss:
                 startActivity(new Intent(getActivity(), NewsListActivity.class));
+                break;
+            case R.id.scanner_code:
+                startActivity(new Intent(getActivity(), CodeScanActivity.class));
+                break;
+            case R.id.nearby:
+
                 break;
         }
     }

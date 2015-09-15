@@ -86,7 +86,7 @@
         <activity
             android:name="com.techscl.ichat.activity.RegisterActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateVisible" />
         <!-- 聊天页面 -->
         <activity
@@ -273,11 +273,17 @@
         <activity
             android:name="com.techscl.ichat.activity.NewsDetailActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 新闻列表-->
         <activity
             android:name="com.techscl.ichat.activity.NewsListActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 扫一扫-->
         <activity
             android:name=".activity.CodeScanActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 更换皮肤-->
+        <activity
+            android:name=".skin.SkinActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".zxing.activity.CaptureActivity"

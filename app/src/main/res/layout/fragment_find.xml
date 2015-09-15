@@ -31,7 +31,7 @@
                         android:layout_margin="@dimen/mid_min_margin"
                         android:stretchColumns="1">
 
-                        <TableRow android:layout_margin="@dimen/min_margin">
+                        <TableRow android:layout_margin="@dimen/mid_min_margin">
 
                             <ImageView
                                 android:layout_width="@dimen/min_max_margin"
@@ -49,7 +49,9 @@
                                 android:textSize="@dimen/nickname_text_size" />
                         </TableRow>
 
-                        <TableRow android:layout_margin="@dimen/min_margin">
+                        <TableRow
+                            android:id="@+id/nearby"
+                            android:layout_margin="@dimen/mid_min_margin">
 
                             <ImageView
                                 android:layout_width="@dimen/min_max_margin"
@@ -67,7 +69,9 @@
                                 android:textSize="@dimen/nickname_text_size" />
                         </TableRow>
 
-                        <TableRow android:layout_margin="@dimen/min_margin">
+                        <TableRow
+                            android:id="@+id/scanner_code"
+                            android:layout_margin="@dimen/mid_min_margin">
 
                             <ImageView
                                 android:layout_width="@dimen/min_max_margin"
@@ -85,8 +89,8 @@
                         </TableRow>
 
                         <TableRow
-                            android:id="@+id/setting_table"
-                            android:layout_margin="@dimen/min_margin">
+                            android:id="@+id/shakes"
+                            android:layout_margin="@dimen/mid_min_margin">
 
                             <ImageView
                                 android:layout_width="@dimen/min_max_margin"
@@ -223,11 +227,11 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:id="@+id/gifImageView"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/sunny" />
+                                android:layout_height="match_parent" />
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+
                 <TextView
                     android:id="@+id/aqi_notice"
                     android:layout_width="wrap_content"

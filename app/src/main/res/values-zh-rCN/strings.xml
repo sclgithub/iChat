@@ -328,4 +328,6 @@
     <string name="aqi_d">建议取消户外运动</string>
     <string name="aqi_e">停止户外运动</string>
     <string name="aqi_f">老实儿在家呆着!</string>
+
+    <string name="change_skin">更换皮肤</string>
 </resources>

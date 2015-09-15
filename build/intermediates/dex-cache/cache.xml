@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.9/jars/classes.jar"
+        jar="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.3/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="741941bec80d0ab35edf9cee5410862cdac81f70">
-        <dex dex="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-62676e3eb6f82e4939e4d4dc1df52c9163a6cfff.jar" />
+        sha1="926692214530f39eaed89159237d26cdc0ae6e48">
+        <dex dex="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-b98d6f88569d6ee4ae1df19d348d429045ba7f96.jar" />
     </item>
 
 </items>

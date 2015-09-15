@@ -3,8 +3,7 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="true"
-    android:background="#f2f0eb">
+    android:animateLayoutChanges="true">
 
     <RelativeLayout
         android:id="@+id/top_bar"
@@ -46,7 +45,6 @@
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:background="@drawable/common_tab_bg"
             android:onClick="toGroupDetails"
             android:visibility="gone">
 

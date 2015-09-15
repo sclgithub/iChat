@@ -51,6 +51,8 @@ import com.techscl.ichat.applib.controller.HXSDKHelper;
 import com.techscl.ichat.base.Constant;
 import com.techscl.ichat.base.DemoHXSDKHelper;
 import com.techscl.ichat.db.InviteMessgeDao;
+import com.techscl.ichat.db.SQLiteDataBaseManager;
+import com.techscl.ichat.db.SQLiteDataBaseTools;
 import com.techscl.ichat.db.UserDao;
 import com.techscl.ichat.domain.InviteMessage;
 import com.techscl.ichat.domain.InviteMessage.InviteMesageStatus;
@@ -59,11 +61,15 @@ import com.techscl.ichat.fragment.ChatAllHistoryFragment;
 import com.techscl.ichat.fragment.ContactlistFragment;
 import com.techscl.ichat.fragment.FindFragment;
 import com.techscl.ichat.fragment.SettingsFragment;
+import com.techscl.ichat.skin.SkinActivity;
 import com.techscl.ichat.utils.CommonUtils;
 import com.techscl.ichat.utils.L;
 import com.techscl.ichat.utils.To;
 import com.umeng.analytics.MobclickAgent;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -73,6 +79,7 @@ import java.util.UUID;
 public class MainActivity extends BaseActivity implements EMEventListener {
     public static RequestQueue requestQueue;
     public static BaiduMapActivity instance = null;
+    public static SQLiteDataBaseTools dataBaseTools;
     static MapView mMapView = null;
     static BDLocation lastLocation = null;
     // 账号在别处登录
@@ -274,7 +281,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestQueue = Volley.newRequestQueue(this);
-
         if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
             // 防止被移除后，没点确定按钮然后按了home键，长期在后台又进app导致的crash
             // 三个fragment里加的判断同理
@@ -291,6 +297,12 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         }
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);// 设置透明状态栏
+        dataBaseTools = new SQLiteDataBaseTools(this);
+//        try {
+//            readFileOnLine();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("iChat");
         setSupportActionBar(toolbar);
@@ -361,6 +373,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                 break;
             case R.id.feedback:
                 startActivity(new Intent(this, DiagnoseActivity.class));
+                break;
+            case R.id.change_skin:
+                startActivity(new Intent(this, SkinActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -779,6 +794,24 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         //getMenuInflater().inflate(R.menu.context_tab_contact, menu);
     }
 
+    public void readFileOnLine() throws IOException {
+        L.i("读取文件");
+        try {
+            InputStreamReader inputReader = new InputStreamReader(getResources().getAssets().open("citycode.txt"));
+            BufferedReader bufReader = new BufferedReader(inputReader);
+            String line = "";
+            String Result = "";
+            while ((line = bufReader.readLine()) != null) {
+                String[] result = line.split("=");
+                dataBaseTools.insert(result[1], result[0], SQLiteDataBaseManager.CITY_LIST);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
     /***
      * 好友变化listener
      */
@@ -1095,5 +1128,4 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             // 加群申请被拒绝，demo未实现
         }
     }
-
 }

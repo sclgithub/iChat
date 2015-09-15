@@ -1,6 +1,7 @@
 package com.techscl.ichat.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -91,6 +92,10 @@ public class RegisterActivity extends BaseGestureActivity {
                                 if (!RegisterActivity.this.isFinishing())
                                     pd.dismiss();
                                 // 保存用户名
+                                Intent result = new Intent(RegisterActivity.this, LoginActivity.class);
+                                result.putExtra("username", userNameEditText.getText().toString());
+                                result.putExtra("password", passwordEditText.getText().toString());
+                                setResult(10, result);
                                 LoveChatApp.getInstance().setUserName(username);
                                 To.show(getResources().getString(R.string.Registered_successfully));
                                 finish();

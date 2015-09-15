@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="alexei-library-1.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.thiagokimo/alexei-library/1.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.thiagokimo/alexei-library/1.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.thiagokimo/alexei-library/1.4/6c2112beee8b2e7d04f0ca869b3392055a7a234f/alexei-library-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -236,4 +236,13 @@ public class LoginActivity extends BaseGestureActivity {
             return;
         }
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 0 && resultCode == 10) {
+            usernameEditText.setText(data.getStringExtra("username"));
+            passwordEditText.setText(data.getStringExtra("password"));
+        }
+    }
 }

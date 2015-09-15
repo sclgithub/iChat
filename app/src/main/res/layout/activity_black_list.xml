@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#f2f0eb" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/top_bar"
@@ -55,7 +54,6 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent"
         android:cacheColorHint="#00000000"
         android:descendantFocusability="afterDescendants"
         android:divider="@color/divider_list"

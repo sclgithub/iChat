@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.techscl.ichat.applib.controller.HXSDKHelper;
+import com.techscl.ichat.skin.ExitApplication;
+import com.techscl.ichat.skin.SkinSettingManager;
 import com.techscl.ichat.utils.To;
 import com.umeng.analytics.MobclickAgent;
 
@@ -18,7 +20,7 @@ public class BaseGestureActivity extends FragmentActivity implements  GestureDet
     private int verticalMinDistance = 30;
     private int middleDistance = 150;
     private int minVelocity = 0;
-
+    private SkinSettingManager mSettingManager;
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
@@ -39,6 +41,13 @@ public class BaseGestureActivity extends FragmentActivity implements  GestureDet
 
         // umeng
         MobclickAgent.onResume(this);
+
+        ExitApplication.getInstance().addActivity(this);
+//	     Define.setTitle(this);
+        mSettingManager=new SkinSettingManager(this);
+        mSettingManager.initSkins();
+
+
     }
 
     @Override

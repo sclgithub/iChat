@@ -10,6 +10,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -17,6 +18,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +33,9 @@ import com.techscl.ichat.domain.User;
 import com.techscl.ichat.utils.UserUtils;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserProfileActivity extends BaseGestureActivity implements OnClickListener {
 
@@ -44,6 +49,8 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
     private ProgressDialog dialog;
     private RelativeLayout rlNickName;
     private Toolbar toolbar;
+    private LinearLayout header_view_background;
+
 
     @Override
     protected void onCreate(Bundle arg0) {
@@ -51,16 +58,21 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
         setContentView(R.layout.activity_user_profile);
         initView();
         initListener();
+        //        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), headAvatar.getId());
+        //        //设置调色板大小(24)
+        //        Palette p = Palette.generate(bitmap, 24);
+        //        Palette.Swatch palette = p.getVibrantSwatch();
+        //        L.i(palette.getRgb() + "");
     }
 
     private void initView() {
-        headAvatar = (ImageView) findViewById(R.id.user_head_avatar);
+        headAvatar = (CircleImageView) findViewById(R.id.user_head_avatar);
         headPhotoUpdate = (ImageView) findViewById(R.id.user_head_headphoto_update);
         tvUsername = (TextView) findViewById(R.id.user_username);
         tvNickName = (TextView) findViewById(R.id.user_nickname);
         rlNickName = (RelativeLayout) findViewById(R.id.rl_nickname);
         iconRightArrow = (ImageView) findViewById(R.id.ic_right_arrow);
-        toolbar= (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(getString(R.string.title_user_profile));
         toolbar.setNavigationIcon(R.mipmap.back);
         toolbar.setNavigationOnClickListener(new OnClickListener() {
@@ -69,6 +81,8 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
                 finish();
             }
         });
+        header_view_background = (LinearLayout) findViewById(R.id.header_view_background);
+
     }
 
     private void initListener() {
@@ -161,8 +175,11 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
                         dialog.dismiss();
                         switch (which) {
                             case 0:
-                                Toast.makeText(UserProfileActivity.this, getString(R.string.toast_no_support), Toast.LENGTH_SHORT).show();
-
+                                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                                intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(Environment
+                                        .getExternalStorageDirectory(),
+                                        "xiaoma.jpg")));
+                                startActivityForResult(intent, 3);
                                 break;
                             case 1:
                                 Intent pickIntent = new Intent(Intent.ACTION_PICK, null);
@@ -224,6 +241,12 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
                 if (data != null) {
                     setPicToView(data);
                 }
+                break;
+            case 3:
+                File tempFile = new File(
+                        Environment.getExternalStorageDirectory(),
+                        "/xiaoma.jpg");
+                startPhotoZoom(Uri.fromFile(tempFile));
                 break;
             default:
                 break;
@@ -294,4 +317,5 @@ public class UserProfileActivity extends BaseGestureActivity implements OnClickL
         bm.compress(Bitmap.CompressFormat.PNG, 100, baos);
         return baos.toByteArray();
     }
+
 }
