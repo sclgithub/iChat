@@ -42,9 +42,7 @@
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e7aa94f-3753-4cac-b190-7dd060db1fc9" name="Default" comment="百度定位天气">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="8e7aa94f-3753-4cac-b190-7dd060db1fc9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iChat.iws" />
@@ -2139,7 +2137,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442238125285</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="第一阶段">
+      <created>1442495907212</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1442495907212</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2197,7 +2201,8 @@
     <MESSAGE value="二维码功能" />
     <MESSAGE value="聊天页面输入法遮挡输入框问题" />
     <MESSAGE value="百度定位天气" />
-    <option name="LAST_COMMIT_MESSAGE" value="百度定位天气" />
+    <MESSAGE value="第一阶段" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一阶段" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
