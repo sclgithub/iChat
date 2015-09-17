@@ -285,6 +285,14 @@
         <activity
             android:name=".skin.SkinActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 附近-->
+        <activity
+            android:name=".activity.NearbyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 附近-->
+        <activity
+            android:name=".activity.BuyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".zxing.activity.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -353,10 +361,7 @@
                 <action android:name="com.baidu.location.service_v3.3"></action>
             </intent-filter>
         </service>
-        <!-- umeng appkey，可忽略 -->
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="53912a3156240b01a7075ed1" />
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="3ecea51f560650b1ed8a4b99808f52e8" />

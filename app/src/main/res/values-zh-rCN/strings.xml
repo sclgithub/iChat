@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string-array name="type">
+        <item>美食</item>
+        <item>电影</item>
+        <item>KTV</item>
+        <item>周边游</item>
+        <item>休闲娱乐</item>
+        <item>购物</item>
+        <item>旅游</item>
+        <item>生活服务</item>
+        <item>小吃快餐</item>
+    </string-array>
     <string name="app_name">iChat</string>
     <string name="text_ack_msg">已读</string>
     <string name="text_delivered_msg">送达</string>

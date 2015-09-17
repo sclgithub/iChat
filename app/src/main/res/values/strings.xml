@@ -121,7 +121,16 @@
     <string name="is_down_please_wait">Downloading video, please try again later</string>
     <string name="Exit_the_group_chat">Exit the group</string>
     <string name="Please_enter_a_username">Please enter a username</string>
-    
+    <string-array name="title">
+        <item>导航</item>
+        <item>最新资讯</item>
+        <item>排行榜</item>
+        <item>安卓快讯</item>
+        <item>苹果快讯</item>
+        <item>WP快讯</item>
+        <item>数码</item>
+        <item>Windows</item>
+    </string-array>
     <string name="not_add_myself">"Can't add myself"</string>
     <string name="This_user_is_already_your_friend">This user is already your friend</string>
     <string name="Add_a_friend">Let me to be your friend!</string>

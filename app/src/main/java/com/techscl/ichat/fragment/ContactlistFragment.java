@@ -78,6 +78,7 @@ public class ContactlistFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        getActivity().overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
         return inflater.inflate(R.layout.fragment_contact_list, container, false);
     }
 

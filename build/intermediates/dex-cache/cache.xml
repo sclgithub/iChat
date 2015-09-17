@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.3/jars/classes.jar"
+        jar="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="926692214530f39eaed89159237d26cdc0ae6e48">
-        <dex dex="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-b98d6f88569d6ee4ae1df19d348d429045ba7f96.jar" />
+        revision="22.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-12593dd1984c95e2e0094f8e4e725db2d671b264.jar" />
     </item>
 
 </items>

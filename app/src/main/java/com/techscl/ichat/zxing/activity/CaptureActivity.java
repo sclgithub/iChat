@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
 import com.techscl.ichat.R;
+import com.techscl.ichat.activity.AddContactActivity;
 import com.techscl.ichat.activity.BaseGestureActivity;
 import com.techscl.ichat.zxing.camera.CameraManager;
 import com.techscl.ichat.zxing.decoding.CaptureActivityHandler;
@@ -124,14 +125,12 @@ public class CaptureActivity extends BaseGestureActivity implements Callback {
         if (resultString.equals("")) {
             Toast.makeText(CaptureActivity.this, "Scan failed!", Toast.LENGTH_SHORT).show();
         } else {
-            // System.out.println("Result:"+resultString);
-            Intent resultIntent = new Intent();
-            Bundle bundle = new Bundle();
-            bundle.putString("result", resultString);
-            resultIntent.putExtras(bundle);
-            this.setResult(RESULT_OK, resultIntent);
+            Intent add = new Intent(this, AddContactActivity.class);
+            add.putExtra("username", resultString);
+            startActivity(add);
+            finish();
         }
-        CaptureActivity.this.finish();
+
     }
 
     private void initCamera(SurfaceHolder surfaceHolder) {

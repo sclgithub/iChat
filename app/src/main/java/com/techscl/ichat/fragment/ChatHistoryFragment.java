@@ -67,6 +67,7 @@ public class ChatHistoryFragment extends Fragment {
     private Toolbar toolbar;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        getActivity().overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
         View view= inflater.inflate(R.layout.fragment_conversation_history, container, false);
         toolbar= (Toolbar) view.findViewById(R.id.toolbar);
         toolbar.setTitle("会话");

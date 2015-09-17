@@ -21,6 +21,7 @@ import com.google.gson.Gson;
 import com.techscl.ichat.R;
 import com.techscl.ichat.activity.CodeScanActivity;
 import com.techscl.ichat.activity.MainActivity;
+import com.techscl.ichat.activity.NearbyActivity;
 import com.techscl.ichat.activity.NewsListActivity;
 import com.techscl.ichat.base.MyStringRequest;
 import com.techscl.ichat.base.Weather;
@@ -45,7 +46,7 @@ public class FindFragment extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+        getActivity().overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_to_left);
         View view = inflater.inflate(R.layout.fragment_find, null);
 
         initView(view);
@@ -241,7 +242,7 @@ public class FindFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), CodeScanActivity.class));
                 break;
             case R.id.nearby:
-
+                startActivity(new Intent(getActivity(), NearbyActivity.class));
                 break;
         }
     }

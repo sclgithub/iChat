@@ -2,6 +2,17 @@
 <resources>
     <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values-zh-rCN/strings.xml -->
     <eat-comment/>
+    <string-array name="type">
+        <item>美食</item>
+        <item>电影</item>
+        <item>KTV</item>
+        <item>周边游</item>
+        <item>休闲娱乐</item>
+        <item>购物</item>
+        <item>旅游</item>
+        <item>生活服务</item>
+        <item>小吃快餐</item>
+    </string-array>
     <string name="Add_a_button_was_clicked">添加按钮被点击</string>
     <string name="Add_a_friend">加个好友呗</string>
     <string name="Add_group_members_fail">添加群成员失败:</string>

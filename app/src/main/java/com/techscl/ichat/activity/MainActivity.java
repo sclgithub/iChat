@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -12,12 +11,15 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.GestureDetector;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
@@ -47,6 +49,7 @@ import com.easemob.util.EMLog;
 import com.easemob.util.HanziToPinyin;
 import com.easemob.util.NetUtils;
 import com.techscl.ichat.R;
+import com.techscl.ichat.adapter.FragmentAdapter;
 import com.techscl.ichat.applib.controller.HXSDKHelper;
 import com.techscl.ichat.base.Constant;
 import com.techscl.ichat.base.DemoHXSDKHelper;
@@ -65,6 +68,7 @@ import com.techscl.ichat.skin.SkinActivity;
 import com.techscl.ichat.utils.CommonUtils;
 import com.techscl.ichat.utils.L;
 import com.techscl.ichat.utils.To;
+import com.techscl.ichat.zxing.activity.CaptureActivity;
 import com.umeng.analytics.MobclickAgent;
 
 import java.io.BufferedReader;
@@ -76,7 +80,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-public class MainActivity extends BaseActivity implements EMEventListener {
+public class MainActivity extends BaseActivity implements EMEventListener, GestureDetector.OnGestureListener, View.OnTouchListener {
     public static RequestQueue requestQueue;
     public static BaiduMapActivity instance = null;
     public static SQLiteDataBaseTools dataBaseTools;
@@ -110,6 +114,12 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private boolean isAccountRemovedDialogShow;
     private BroadcastReceiver internalDebugReceiver;
     private Toolbar toolbar;
+    private GestureDetector gestureDetector;
+    private int verticalMinDistance = 30;
+    private int middleDistance = 150;
+    private int minVelocity = 0;
+    private RelativeLayout fragment_container;
+    private FragmentAdapter fragmentAdapter;
 
     /**
      * 同步群聊
@@ -281,6 +291,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestQueue = Volley.newRequestQueue(this);
+        gestureDetector = new GestureDetector(this);
         if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
             // 防止被移除后，没点确定按钮然后按了home键，长期在后台又进app导致的crash
             // 三个fragment里加的判断同理
@@ -325,13 +336,15 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         contactListFragment = new ContactlistFragment();
         settingFragment = new SettingsFragment();
         findFragment = new FindFragment();
-        fragments = new Fragment[]{chatHistoryFragment, contactListFragment, findFragment, settingFragment};
+        fragments = new Fragment[]{chatHistoryFragment, contactListFragment,
+                findFragment, settingFragment};
 
         // 添加显示第一个fragment
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, chatHistoryFragment)
                 .add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(chatHistoryFragment)
                 .commit();
-
+//        fragmentAdapter=new FragmentAdapter(getSupportFragmentManager(),fragments);
+//        fragment_container.setAdapter(fragmentAdapter);
         init();
         //异步获取当前用户的昵称和头像
         ((DemoHXSDKHelper) HXSDKHelper.getInstance()).getUserProfileManager().asyncGetCurrentUserInfo();
@@ -350,9 +363,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         // 注册群聊相关的listener
         EMGroupManager.getInstance().addGroupChangeListener(groupChangeListener);
 
-
-        //内部测试方法，请忽略
-        registerInternalDebugReceiver();
     }
 
     @Override
@@ -369,7 +379,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                 startActivity(new Intent(this, AddContactActivity.class));
                 break;
             case R.id.scanner_code:
-                startActivity(new Intent(this, CodeScanActivity.class));
+                startActivity(new Intent(this, CaptureActivity.class));
                 break;
             case R.id.feedback:
                 startActivity(new Intent(this, DiagnoseActivity.class));
@@ -387,6 +397,8 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private void initView() {
         unreadLabel = (TextView) findViewById(R.id.unread_msg_number);
         unreadAddressLable = (TextView) findViewById(R.id.unread_address_number);
+        fragment_container = (RelativeLayout) findViewById(R.id.fragment_container);
+        fragment_container.setOnTouchListener(this);
         mTabs = new Button[4];
         mTabs[0] = (Button) findViewById(R.id.btn_conversation);
         mTabs[1] = (Button) findViewById(R.id.btn_address_list);
@@ -645,6 +657,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         // register the event listener when enter the foreground
         EMChatManager.getInstance().registerEventListener(this,
                 new EMNotifierEvent.Event[]{EMNotifierEvent.Event.EventNewMessage, EMNotifierEvent.Event.EventOfflineMessage, EMNotifierEvent.Event.EventConversationListChanged});
+
     }
 
     @Override
@@ -752,42 +765,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         }
     }
 
-    /**
-     * 内部测试代码，开发者请忽略
-     */
-    private void registerInternalDebugReceiver() {
-        internalDebugReceiver = new BroadcastReceiver() {
-
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                DemoHXSDKHelper.getInstance().logout(true, new EMCallBack() {
-
-                    @Override
-                    public void onSuccess() {
-                        runOnUiThread(new Runnable() {
-                            public void run() {
-                                // 重新显示登陆页面
-                                finish();
-                                startActivity(new Intent(MainActivity.this, LoginActivity.class));
-
-                            }
-                        });
-                    }
-
-                    @Override
-                    public void onProgress(int progress, String status) {
-                    }
-
-                    @Override
-                    public void onError(int code, String message) {
-                    }
-                });
-            }
-        };
-        IntentFilter filter = new IntentFilter(getPackageName() + ".em_internal_debug");
-        registerReceiver(internalDebugReceiver, filter);
-    }
-
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
@@ -810,6 +787,72 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    public boolean onDown(MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+        return false;
+    }
+
+    @Override
+    public void onLongPress(MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+
+        if (e2.getX() - e1.getX() > verticalMinDistance && Math.abs(velocityX) > minVelocity && (Math.abs(e2.getY() - e1.getY()) < middleDistance)) {
+            if (currentTabIndex != 0) {
+                index--;
+
+            }
+
+        } else if (e1.getX() - e2.getX() > verticalMinDistance && Math.abs(velocityX) > minVelocity && (Math.abs(e2.getY() - e1.getY()) < middleDistance)) {
+            if (currentTabIndex != 3) {
+                index++;
+            }
+
+        }
+        if (currentTabIndex != index) {
+            FragmentTransaction trx = getSupportFragmentManager().beginTransaction();
+            trx.hide(fragments[currentTabIndex]);
+            if (!fragments[index].isAdded()) {
+                trx.add(R.id.fragment_container, fragments[index]);
+            }
+            trx.show(fragments[index]).commit();
+        }
+        mTabs[currentTabIndex].setSelected(false);
+        // 把当前tab设为选中状态
+        mTabs[index].setSelected(true);
+        currentTabIndex = index;
+        return false;
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        return false;
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        gestureDetector.onTouchEvent(ev);
+        return super.dispatchTouchEvent(ev);
     }
 
     /***
@@ -1128,4 +1171,5 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             // 加群申请被拒绝，demo未实现
         }
     }
+
 }

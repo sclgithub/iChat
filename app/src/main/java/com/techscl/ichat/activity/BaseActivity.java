@@ -29,6 +29,7 @@ public class BaseActivity extends ActionBarActivity {
 //	     Define.setTitle(this);
         mSettingManager=new SkinSettingManager(this);
         mSettingManager.initSkins();
+
     }
 
     @Override
