@@ -4,4 +4,4 @@
     <item android:drawable="@mipmap/settings_pressed" android:state_selected="true"/>
     <item android:drawable="@mipmap/settings"/>
 
-</selector><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/tab_setting_bg.xml -->
+</selector><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/drawable/tab_setting_bg.xml -->

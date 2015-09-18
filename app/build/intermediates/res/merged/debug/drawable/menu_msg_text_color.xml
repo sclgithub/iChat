@@ -5,4 +5,4 @@
     <item android:color="#99cc00" android:state_selected="true"/>
     <item android:color="@color/top_bar_normal_bg" />
 </selector>
-<!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/menu_msg_text_color.xml -->
+<!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/drawable/menu_msg_text_color.xml -->

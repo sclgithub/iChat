@@ -5,4 +5,4 @@
         android:id="@+id/remove"
         android:title="@string/move_out_backlist"/>
 
-</menu><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/menu/remove_from_blacklist.xml -->
+</menu><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/menu/remove_from_blacklist.xml -->

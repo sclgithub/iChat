@@ -3,4 +3,4 @@
     <item android:color="@color/blue" android:state_selected="true" />
     <item android:color="@color/gray" />
 </selector>
-<!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/color/main_botton_text_color.xml -->
+<!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/color/main_botton_text_color.xml -->

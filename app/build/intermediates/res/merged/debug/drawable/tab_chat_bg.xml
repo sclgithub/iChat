@@ -4,4 +4,4 @@
     <item android:drawable="@mipmap/msg_pressed" android:state_selected="true" />
     <item android:drawable="@mipmap/msg" />
 
-</selector><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/tab_chat_bg.xml -->
+</selector><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/drawable/tab_chat_bg.xml -->

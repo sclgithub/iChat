@@ -76,4 +76,4 @@
             android:layout_toLeftOf="@id/row_recv_pic" />
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/row_received_picture.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/layout/row_received_picture.xml -->

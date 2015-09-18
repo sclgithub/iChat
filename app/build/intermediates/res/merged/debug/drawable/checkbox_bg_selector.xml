@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/dx_checkbox_on" android:state_checked="true"/>
     <item android:drawable="@drawable/dx_checkbox_off"/>
 
-</selector>	<!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/checkbox_bg_selector.xml -->
+</selector>	<!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/drawable/checkbox_bg_selector.xml -->

@@ -2,11 +2,165 @@
 <items version="2" >
 
     <item
-        jar="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/locSDK_3.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="590d32bdf5bb37ee372a21696b8f7853b224e31f">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/locSDK_3.3-e4cf2afd14e80814ea637b10bb96ac1389fa0f7a.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-2d50c71a1c2cfc13e2e97b75c8abb16ab1faee96.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/zxing.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/zxing-f38a3d39eff6869e4944b4e02451742573fa46a4.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-c53a59c09eeb3653b94a222a7bf362f4e0905afc.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="926692214530f39eaed89159237d26cdc0ae6e48">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-ddf074b87c5c3ecf65f5f7262d818adce1d64f6f.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/android-sdks/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-57ab64b46c0fc40cf4da88409078b675714e8292.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/baidumapapi_v3_2_0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/baidumapapi_v3_2_0-f2caff192874dfcf328dba3d0253456a91a36da9.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-f120b816f353d82ab23be64a1a5c367db82a94be.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-b94da0376eb93643e74da803b797252f664258cb.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/google-play-services.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f0d8e4a84fad131bc291c3c4850afcaa8ba0b299">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/google-play-services-4b5aab54b8579b4e96e4ccd817ac450989126a8b.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/microlog4android-1.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="106efa33f887654341a952b0f337512f7e0a2987">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/microlog4android-1.0.1-02a8b977ca1fc1c34f233e67277aed5d8f0cbad8.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.9/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="741941bec80d0ab35edf9cee5410862cdac81f70">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-0fdeeb811fa101a249f4b92b672e641223155616.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="/Users/dllo/Desktop/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-12593dd1984c95e2e0094f8e4e725db2d671b264.jar" />
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-2ec007fa62b0e47e1a3c647098833123c613772a.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/umeng-analytics-v5.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/umeng-analytics-v5.2.4-9204d6a21e7885ce38cca3bd483921f54c435fc5.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/Volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77faa9ffd189160d1e22c58fdf5eed0a9a08b816">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/Volley-3357d1c54366f449be5547dfafcf3a1faf97637b.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-35a0775cdab6a9692b01adcb5bfa709085f3783c.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-cbca3b417e7b74b6106a061b24e7438d8eafce67.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-97ab773ed865cb5dfd097b766923624a369270c7.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/jsoup-1.8.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3d57e95c0f150b885ccdbda7a12bef353fd31d02">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/jsoup-1.8.1-bf47a33cb9cba4995891db21a95f532322d800a3.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/gson-2.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/gson-2.2.1-922d047efa30e80e0d68800665795c4cf8369e7c.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/exploded-aar/com.github.thiagokimo/alexei-library/1.4/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="94d19540310eba2cf9f1b77f90d7b27b146c8967">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/classes-d07c2bc6b23bd82fd2c1345d8fb314c65b1efb36.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/easemobchat_2.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6b9388b9b8895ac9551dcc58c70019a83e03204f">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/easemobchat_2.2.2-d9d6963e0e25022b4170ed703cade0b9a80b3b6f.jar" />
+    </item>
+    <item
+        jar="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/libs/Parse-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="56c22930b5d4f77015b6a40c7f14103d3e101001">
+        <dex dex="/Users/dllo/Desktop/蓝鸥/Android Studio/iChat/app/build/intermediates/pre-dexed/debug/Parse-1.9.4-ab328e89d8022597c2bce403aa71e7eb03db01ac.jar" />
     </item>
 
 </items>

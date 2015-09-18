@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/chat_face_pressed" android:state_selected="true"/>
     <item android:drawable="@drawable/chat_face_normal"/>
 
-</selector><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/chat_face_selector.xml -->
+</selector><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/drawable/chat_face_selector.xml -->

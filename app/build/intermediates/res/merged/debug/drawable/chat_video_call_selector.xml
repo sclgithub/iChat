@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/chat_video_call_pressed" android:state_enabled="false"/>
     <item android:drawable="@drawable/chat_video_call_normal"/>
 
-</selector><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/drawable/chat_video_call_selector.xml -->
+</selector><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/drawable/chat_video_call_selector.xml -->

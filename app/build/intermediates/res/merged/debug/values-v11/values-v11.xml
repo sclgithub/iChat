@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="Anim_style2" parent="android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:windowAnimationStyle">@style/AnimFade</item>
     </style>
-    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml -->
+    <!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
@@ -165,7 +165,7 @@
         <item name="android:actionModePasteDrawable">?actionModePasteDrawable</item>
     </style>
     <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Holo.Spinner"/>
-    <!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="horizontal_slide" parent="android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:windowAnimationStyle">@style/AnimFade2</item>

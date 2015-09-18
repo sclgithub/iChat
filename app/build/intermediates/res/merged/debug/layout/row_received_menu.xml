@@ -63,4 +63,4 @@
             android:layout_toLeftOf="@id/ll_chatcontent" />
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/Users/dllo/Desktop/Android%20Studio/iChat/app/src/main/res/layout/row_received_menu.xml -->
+</LinearLayout><!-- From: file:/Users/dllo/Desktop/蓝鸥/Android%20Studio/iChat/app/src/main/res/layout/row_received_menu.xml -->
